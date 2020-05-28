@@ -1,6 +1,20 @@
 module.exports = {
-  someSidebar: {
-    Docusaurus: ['doc1', 'doc2', 'doc3'],
-    Features: ['mdx'],
+  docs: {
+    'Sysl': ['introduction'],
+    'Getting Started': [
+        {
+            "I'm a Developer": ['installation', 'examples-dev'],
+            "I'm a Non-developer": ['installation', 'examples-nondev'],
+        },
+    ],
+    'Guides': ['gen-code', 'gen-diagram', 'gen-docs'],
+    'Advanced Guides': [
+        'lang-spec',
+        {
+            "Command Documentation": ['cmd', 'cmd-import', 'cmd-export'],
+        },
+        'plugin',
+    ],
+    'References': [],
   },
 };
