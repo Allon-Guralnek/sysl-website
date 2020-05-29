@@ -6,6 +6,7 @@ sidebar_label: Introduction
 
 TODO
 Reference: https://sysl.io/
+Awareness
 
 ## What is Sysl
 
@@ -23,7 +24,6 @@ Integration Diagram
 client/server side code
 rest
 gRPC
-
 
 ### Database Script Generation
 database init script

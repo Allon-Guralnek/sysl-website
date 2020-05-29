@@ -9,7 +9,7 @@ sidebar_label: Get Help
 2. GitHub: 
 	* report a bug
 	* request a feature
-	* contributing to sysl/sysl-website
+	* contributing to sysl/sysl-website (contributing.md)
 4. sysl oss slack
 5. FAQ
 6. Tips&Tricks
@@ -18,7 +18,7 @@ sidebar_label: Get Help
 1. playground
 2. docker
 3. brew
-4. IDE Plugin
+4. IDE Plugin: https://github.com/anz-bank/vscode-sysl
 
 ## Stay informed
 1. [blog](/blog)

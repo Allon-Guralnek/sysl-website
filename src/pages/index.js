@@ -8,32 +8,29 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: <>Easy to Use</>,
+    title: <>Synchronised</>,
     imageUrl: 'img/undraw_docusaurus_mountain.svg',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        With Sysl, your specifications become the single source of truth - no more stale designs.
       </>
     ),
   },
   {
-    title: <>Focus on What Matters</>,
-    imageUrl: 'img/undraw_docusaurus_tree.svg',
-    description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
-    ),
-  },
-  {
-    title: <>Powered by React</>,
+    title: <>Extendable</>,
     imageUrl: 'img/undraw_docusaurus_react.svg',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Sysl allows for your custom output formats via extensions in your preferred, major programming language.
+      </>
+    ),
+  },
+  {
+    title: <>Cross-platform</>,
+    imageUrl: 'img/undraw_docusaurus_tree.svg',
+    description: (
+      <>
+        Sysl works on Windows, MacOS and Linux.
       </>
     ),
   },
