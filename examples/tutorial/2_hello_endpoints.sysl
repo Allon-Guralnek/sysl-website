@@ -1,0 +1,5 @@
+# The fantastic Hello World greeting system.
+
+HelloService:
+    GetGreeting(userId):
+        ...

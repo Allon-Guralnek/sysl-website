@@ -1,6 +1,6 @@
 module.exports = {
   docs: {
-    'Sysl': ['introduction'],
+    'Sysl': ['introduction', 'tutorial'],
     'Getting Started': [
         {
             "I'm a Developer": ['installation', 'examples-dev'],
