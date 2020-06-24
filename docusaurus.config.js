@@ -1,6 +1,6 @@
 module.exports = {
   title: 'Sysl',
-  tagline: 'System specification language',
+  tagline: 'System Specification Language',
   url: 'https://sysl.io',
   baseUrl: '/',
   favicon: 'img/logo-blue-net-s.png',
@@ -8,10 +8,10 @@ module.exports = {
   projectName: 'sysl', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: '',
+      title: 'Sysl',
       logo: {
         alt: 'Sysl Logo',
-        src: 'img/logo-blue.png',
+        src: 'img/logo-blue-net-s.png',
       },
       links: [
         { to: 'docs/', label: 'Docs', position: 'right' },
@@ -31,12 +31,6 @@ module.exports = {
         },
       ],
     },
-    // algolia: {
-    //   apiKey: 'api-key',
-    //   indexName: 'index-name',
-    //   appId: 'app-id', // Optional, if you run the DocSearch crawler on your own
-    //   algoliaOptions: {}, // Optional, if provided by Algolia
-    // },
     footer: {
       copyright: `Copyright © ${new Date().getFullYear()} Sysl.`,
     },
@@ -66,7 +60,7 @@ module.exports = {
   plugins: [],
   scripts: [],
   stylesheets: [
-    "https://fonts.googleapis.com/css?family=Ubuntu|Roboto|Source+Code+Pro",
+    "https://fonts.googleapis.com/css?family=Lato:wght@400;900|Roboto|Source+Code+Pro",
     "https://at-ui.github.io/feather-font/css/iconfont.css",
   ],
   themes: [],

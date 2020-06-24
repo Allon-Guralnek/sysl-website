@@ -8,29 +8,56 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: <>Synchronised</>,
-    imageUrl: 'img/undraw_docusaurus_mountain.svg',
+    title: <>Diagrams</>,
+    imageUrl: 'img/icon/diagram.svg',
     description: (
       <>
-        With Sysl, your specifications become the single source of truth - no more stale designs.
+        Sysl generates data, integration and sequence diagrams from your specs.
       </>
     ),
   },
   {
-    title: <>Extendable</>,
-    imageUrl: 'img/undraw_docusaurus_react.svg',
+    title: <>Code</>,
+    imageUrl: 'img/icon/code.svg',
     description: (
       <>
-        Sysl allows for your custom output formats via extensions in your preferred, major programming language.
+        Sysl generates Go applications out of the box: client and server, REST and gRPC.
+      </>
+    ),
+  },
+  {
+    title: <>Extensions</>,
+    imageUrl: 'img/icon/plug.svg',
+    description: (
+      <>
+        Sysl supports an ecosystem of tools - generate anything else that you need.
+      </>
+    ),
+  },
+  {
+    title: <>Synchronised</>,
+    imageUrl: 'img/icon/sync.svg',
+    description: (
+      <>
+        Your Sysl specifications become your single source of truth - no more stale designs.
       </>
     ),
   },
   {
     title: <>Cross-platform</>,
-    imageUrl: 'img/undraw_docusaurus_tree.svg',
+    imageUrl: 'img/icon/computer.svg',
+    description: (
+        <>
+          Sysl works on Windows, MacOS and Linux.
+        </>
+    ),
+  },
+  {
+    title: <>Open Source</>,
+    imageUrl: 'img/icon/lock_open.svg',
     description: (
       <>
-        Sysl works on Windows, MacOS and Linux.
+        Sysl is licensed under Apache 2.0, free for personal or commercial use.
       </>
     ),
   },
@@ -64,10 +91,7 @@ function Home() {
           <p className="hero__subtitle">{siteConfig.tagline}</p>
           <div className={styles.buttons}>
             <Link
-              className={classnames(
-                'button button--outline button--secondary button--lg',
-                styles.getStarted,
-              )}
+              className={classnames('button button--outline button--lg')}
               to={useBaseUrl('docs/')}>
               Get Started
             </Link>

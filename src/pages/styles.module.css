@@ -10,6 +10,7 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+  font-family: Lato,Arial,sans-serif;
 }
 
 @media screen and (max-width: 966px) {
@@ -31,7 +32,14 @@
   width: 100%;
 }
 
+.features h3 {
+  text-align: center;
+  font-size: 1.75em;
+  font-weight: normal;
+  margin-top: 0.5em;
+}
+
 .featureImage {
-  height: 200px;
-  width: 200px;
+  height: 64px;
+  width: 64px;
 }
