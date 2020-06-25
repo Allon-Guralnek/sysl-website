@@ -110,7 +110,7 @@ Now that our system has some communication happening, we can generate some usefu
 Let's create a **sequence diagram** illustrating the communication:
 
 ```bash
-sysl sd --endpoint=Greet hello_endpoints.sysl
+sysl sd --endpoint=Greet hello.sysl
 ```
 
 This produces the diagram below:
@@ -121,8 +121,72 @@ This shows the `GetGreeting` request to `HelloService`, but wait, where is `Hell
 
 TODO(ladeo): Great question.
 
-We can also produce an **integration diagram**, showing the components involved in the execution of an endpoint:
+This requires brief detour into **projects**.
+
+:::note
+This is probably a bug, and the CLI will be improved in the future so projects are not required consistently. 
+:::
+
+
+## Projects
+
+Sysl is designed to be used by project teams within the context of a larger organisation. These teams must generate certain documentation relating to a subset of the applications in the system.
+
+Sysl has a concept of a **project** that represents a view, a particular subset of a Sysl model for which to generate outputs.
+
+Let's demonstrate by creating a project that captures the whole system:
+
+```sysl
+# The fantastic Hello World greeting system.
+
+HelloService:
+    GetGreeting(userId):
+        ...
+
+HelloApp:
+    Greet:
+        HelloService <- GetGreeting
+
+HelloProject:
+    Greeting:
+        HelloApp
+        HelloService
+        HelloApp <- Greet
+```
+
+Notice that the structure is similar to that of an application: three nested blocks. Indeed, generating a diagram of the whole module will treat `HelloProject` as an application, because there's nothing special about it.
+
+However when invoking `sysl` to generate diagrams, we can provide `HelloProject` as the `project` parameter. Then the inner-most block is interpreted as a list of applications and endpoints of interest. The resulting diagram will contain only those (and not a box for `HelloProject`).
+
+Let's take a look:
 
 ```bash
-sysl ints  hello_endpoints.sysl -v --endpoint=Greet
+sysl sd --app HelloProject hello.sysl
 ```
+
+![Sequence diagram of the Greeting scenario](../examples/tutorial/out/4_hello_project_sd.png)
+
+```bash
+sysl ints --project HelloProject hello.sysl
+```
+
+![Integration diagram of the Greeting scenario](../examples/tutorial/out/4_hello_project_ints.png)
+
+```bash
+sysl ints --epa --project HelloProject hello.sysl
+```
+
+![Endpoint analysis diagram of the Greeting scenario](../examples/tutorial/out/4_hello_project_epa.png)
+
+Now we're getting somewhere! These diagrams are pretty basic, but they will grow with the Sysl model. You can also customise them with additional model attributes and command line flags. See [Diagram Generation](gen-diagram.md) for more details.
+
+## Next steps
+
+This is just scratching the surface of what Sysl can do, but hopefully you're starting to see how it can be used to support and maintain the design, implementation and testing of an application, and of the whole enterprise.
+
+To learn more about how Sysl can support you in your role, take a deeper dive in the following guides:
+
+* [Sysl for Business Analysts](guide-ba.md)
+* [Sysl for Developers](guide-dev.md)
+* [Sysl for System Architects](guide-arch.md)
+* [Sysl for Software Testers](guide-test.md)

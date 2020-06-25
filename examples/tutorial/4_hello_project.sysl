@@ -1,0 +1,15 @@
+# The fantastic Hello World greeting system.
+
+HelloService:
+    GetGreeting(userId):
+        ...
+
+HelloApp:
+    Greet:
+        HelloService <- GetGreeting
+
+HelloProject [appfmt="%(appname)"]:
+    Greeting:
+        HelloApp
+        HelloService
+        HelloApp <- Greet

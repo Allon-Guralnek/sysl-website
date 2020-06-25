@@ -1,11 +1,12 @@
 module.exports = {
   docs: {
-    'Sysl': ['introduction', 'tutorial'],
     'Getting Started': [
-        {
-            "I'm a Developer": ['installation', 'examples-dev'],
-            "I'm a Non-developer": ['installation', 'examples-nondev'],
-        },
+        'introduction',
+        'tutorial',
+        'guide-arch',
+        'guide-ba',
+        'guide-dev',
+        'guide-test',
     ],
     'Guides': ['gen-code', 'gen-diagram', 'gen-docs'],
     'Advanced Guides': [
