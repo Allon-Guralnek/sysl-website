@@ -19,24 +19,10 @@ Sysl saves time, allows you to focus on your core business logic, and guarantees
 
 ## Get started
 
-Check out [Installation](installation.md) for details on the many ways you can  install Sysl. In summary:
-
-* There are Pre-compiled binaries on the [GitHub releases page](https://github.com/anz-bank/sysl/releases).
-* Mac: `$ brew install anz-bank/homebrew-sysl/sysl`
-* Docker: `$ docker run --rm -it -v $HOME:$HOME -w $(pwd) anzbank/sysl:latest`
-* Go: `$ GO111MODULE=on go get -u github.com/anz-bank/sysl/cmd/sysl`
-* Source: `$ git clone https://github.com/anz-bank/sysl.git`, then `$ make install`
+Check out [Installation](installation.md) for how to install Sysl. Or just grab a pre-compiled binary from the [GitHub releases page](https://github.com/anz-bank/sysl/releases).
 
 To write Sysl specifications, you'll want [Visual Studio Code](https://code.visualstudio.com/) with the [Sysl extension](https://marketplace.visualstudio.com/items?itemName=ANZ-BANK.vscode-sysl) for syntax highlighting `.sysl` files.
 
-Once you have `sysl` working, start with the [Tutorial](tutorial.md) to get a feel for what Sysl can do.
+Once you have `sysl` working, **[start with the Tutorial](tutorial.md)** to get a feel for what Sysl can do.
 
-Then 
-## Primary Users and how would Sysl benefit them
-### Developers
-
-### Non-developers
-#### Architects
-#### Analysts
-#### Testers
-#### Data Engineers/Scientists
+There are also use cases for [developers](examples-dev.md) and [non-developers](examples-nondev.md), and more in-depth details of the [each of Sysl's features](features.md) and the [language itself](lang-spec.md).
