@@ -4,12 +4,12 @@ HelloService:
     GetGreeting(userId):
         ...
 
-HelloApp:
+Hello App:
     Greet:
         HelloService <- GetGreeting
 
 HelloProject [appfmt="%(appname)"]:
     Greeting:
-        HelloApp
+        Hello App
         HelloService
-        HelloApp <- Greet
+        Hello App <- Greet

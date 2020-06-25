@@ -4,6 +4,6 @@ HelloService:
     GetGreeting(userId):
         ...
 
-HelloApp:
+Hello App:
     Greet:
         HelloService <- GetGreeting
