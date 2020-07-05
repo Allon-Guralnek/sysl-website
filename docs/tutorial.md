@@ -108,10 +108,10 @@ HelloService:
 
 Hello App:
     Greet:
-        HelloService <- GetGreeting
+        HelloService <- GET /greeting/{userId}
 ```
 
-We've added a new `Hello App` application with a `Greet` endpoint, and specified its behaviour. The behaviour says that `Greet` does one thing: it sends a request to `HelloService`, invoking the `GetGreeting` endpoint.
+We've added a new `Hello App` application with a `Greet` endpoint, and specified its behaviour. The behaviour says that `Greet` does one thing: it sends a request to `HelloService`, invoking the `GET /greeting/{userId}` endpoint (the `app <- endpoint` operator can be read like "`app` receives call to `endpoint`").
 
 :::note
 At this level of detail, we're not interested in specifically what happens to the result of the call. However Sysl has a special grammar for specifying more detailed behaviour as transformations.
@@ -119,25 +119,19 @@ At this level of detail, we're not interested in specifically what happens to th
 
 Now that our system has some communication happening, we can generate some useful output. **Diagrams** are the most common representation of Sysl specifications, since they are visual, rich, standard, and easily shared.
 
-Let's create a **sequence diagram** illustrating the communication:
+Let's create a **sequence diagram** illustrating the communication. Sequence diagram generation requires an interaction (i.e. an endpoint invocation) to draw, so we'll use `Hello App <- Greet` 
 
 ```bash
-sysl sd --endpoint=Greet hello.sysl
+sysl sd --endpoint="Hello App <- Greet" hello.sysl
 ```
 
 This produces the diagram below:
 
 ![Sequence diagram of the Greet endpoint](../examples/tutorial/out/3_hello_communication_sd.png)
 
-This shows the `GetGreeting` request to `HelloService`, but wait, where is `Hello App`?
+This shows `Hello App` sending a `GET /greeting/{userId}` request to `HelloService`. Great!
 
-TODO(ladeo): Great question.
-
-This requires brief detour into **projects**.
-
-:::note
-This is probably a bug, and the CLI will be improved in the future so projects are not required consistently. 
-:::
+However it's a bit clunky to have to spell out the full endpoint name for every diagram that we want to generate. Sure, you could write a script with multiple calls, but that would grow stale as the spec evolves. To keep it all in the Sysl universe, we have the concept of a **project**.
 
 
 ## Projects
