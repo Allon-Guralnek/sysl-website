@@ -12,6 +12,8 @@ module.exports = {
             'gen-code',
             'gen-diagram',
             'gen-docs',
+            'gen-db',
+            'gen-test',
         ],
         'Advanced Guides': [
             'lang-spec',
