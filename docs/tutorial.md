@@ -55,21 +55,30 @@ See [Exporting Sysl](cmd-export.md) for more about outputting Sysl protobufs.
 
 ## Endpoints
 
-`HelloService` is a web service that returns the user's greeting. In Sysl, applications are modelled as a collection of **endpoints**, so we'll add a new `GetGreeting` endpoint below `HelloService:`:
+`HelloService` is a web service that returns the user's greeting. In Sysl, applications are modelled as a collection of **endpoints**, so we'll add a new greeting endpoint below `HelloService:`:
 
 ```sysl
 # The fantastic Hello World greeting system.
 
 HelloService:
-    GetGreeting(userId):
-        ...
+    /greeting/{userId}:
+        GET:
+            ...
 ```
 
 A few things are happening here:
 
 `#` begins a comment. The first line is just describing the system represented by the specification (this is of course optional).
 
-`GetGreeting` is the name of the endpoint. It is followed by a comma-separated list of **parameters** in `(` parentheses `)`. In this case, there's a single parameter called `userId`.
+`/greeting/{userId <: int}` is the path of the endpoint. Using a path indicates that this endpoint is a REST endpoint; RPC endpoints can also be specified with a function signature (e.g. `GetGreeting(userIduserId <: int)`).
+
+`{userId <: int}` describes a path **parameter** of **type** integer. Whatever value is provided when calling the endpoint will be interpreted as an integer, and bound to the name `userId`.
+
+:::info
+The `<:` is the "set element" operator. `x <: Y` asserts that `x` is in the set `Y`. Sysl uses it for specifying the type of a variable. In this case, it reads as "`userId` is an integer" (i.e. "`userId` is in the set of all integers")".
+:::
+
+The `GET` in the block beneath the path indicates the HTTP method of the endpoint. This is the end of the endpoint declaration. In sum, we've specified that "`HelloService` exposes a REST endpoint `GET /greeting/{userId <: int}`".
 
 The block following the endpoint declaration models its **behaviour**. We've once again used the placeholder `...` to indicate that we don't have a detailed specification for it yet.
 
@@ -93,8 +102,9 @@ You can probably guess what happens next:
 # The fantastic Hello World greeting system.
 
 HelloService:
-    GetGreeting(userId):
-        ...
+    /greeting/{userId <: int}:
+        GET:
+            ...
 
 Hello App:
     Greet:
@@ -104,7 +114,7 @@ Hello App:
 We've added a new `Hello App` application with a `Greet` endpoint, and specified its behaviour. The behaviour says that `Greet` does one thing: it sends a request to `HelloService`, invoking the `GetGreeting` endpoint.
 
 :::note
-At this level of detail, we're not interested in specifically what happens to the result of `GetGreeting`. However Sysl has a special grammar for specifying more detailed behaviour as transformations.
+At this level of detail, we're not interested in specifically what happens to the result of the call. However Sysl has a special grammar for specifying more detailed behaviour as transformations.
 :::
 
 Now that our system has some communication happening, we can generate some useful output. **Diagrams** are the most common representation of Sysl specifications, since they are visual, rich, standard, and easily shared.
@@ -142,12 +152,13 @@ Let's demonstrate by creating a project that captures the whole system:
 # The fantastic Hello World greeting system.
 
 HelloService:
-    GetGreeting(userId):
-        ...
+    /greeting/{userId <: int}:
+        GET:
+            ...
 
 Hello App:
     Greet:
-        HelloService <- GetGreeting
+        HelloService <- GET /greeting/{userId}
 
 HelloProject:
     Greeting:
