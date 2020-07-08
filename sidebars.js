@@ -5,7 +5,7 @@ module.exports = {
             'installation',
             'tutorial',
             'examples-dev',
-            'examples-nondev',
+            'examples-non-dev',
         ],
         'Features': [
             'features',
