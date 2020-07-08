@@ -76,4 +76,4 @@ This command generates static content into the `build` directory and can be serv
 
 ### Deployment
 
-A development version is currently deployed using Netlify. Deployment previews are enabled ,so each PR should have a unique deployment preview link which can be found in the Github Status Checks.
+A development version is deployed using Netlify. Deployment previews are enabled, so each PR has a unique deployment preview link which can be found in the Github Status Checks.
