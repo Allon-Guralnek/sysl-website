@@ -21,7 +21,8 @@ module.exports = {
                 "Command Documentation": [
                     'cmd',
                     'cmd-import',
-                    'cmd-export'
+                    'cmd-export',
+                    'common-flags'
                 ],
             },
             'plugin',
