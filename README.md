@@ -2,6 +2,7 @@
 
 Sysl website https://sysl.io is built using [Docusaurus 2](https://v2.docusaurus.io/).
 
+See our development site here: [Sysl Website](https://vibrant-neumann-307d85.netlify.app/)
 
 ## Contributing
 
@@ -75,4 +76,8 @@ This command generates static content into the `build` directory and can be serv
 
 ### Deployment
 
-TODO
+A development version is deployed using Netlify. Deployment previews are enabled, so each PR has a unique deployment preview link which can be found in the Github Status Checks.
+
+### Linter
+
+[spellcheck](https://github.com/marketplace/actions/github-spellcheck-action) GitHub Action is used as the English spelling check linter. Add custom terms in `.wordlist.txt` to pass the spelling check.

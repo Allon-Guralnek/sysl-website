@@ -1,11 +1,11 @@
 ---
-id: examples-nondev
+id: examples-non-dev
 title: Non-Developer Use Cases
 sidebar_label: Non-Developer Use Cases
 ---
 
 Doc Reference: 
-* ./examples/gen/diagramgen
+* [diagram generation](./examples/gen/diagramgen)
 
 ## As an Architect
 
@@ -40,7 +40,7 @@ Sysl in action
 Sysl in action
 
 
-### Scenario 3 - Generate datamodel diagrams
+### Scenario 3 - Generate Data Model diagrams
 
 ### Approach for Scenario 3
 

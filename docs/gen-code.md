@@ -1,7 +1,6 @@
 ---
 id: gen-code
 title: Code Generation
-sidebar_label: Code Generation
 ---
 
 TODO

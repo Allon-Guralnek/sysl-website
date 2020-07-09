@@ -1,20 +1,31 @@
 module.exports = {
-  docs: {
-    'Sysl': ['introduction'],
-    'Getting Started': [
-        {
-            "I'm a Developer": ['installation', 'examples-dev'],
-            "I'm a Non-developer": ['installation', 'examples-nondev'],
-        },
-    ],
-    'Guides': ['gen-code', 'gen-diagram', 'gen-docs'],
-    'Advanced Guides': [
-        'lang-spec',
-        {
-            "Command Documentation": ['cmd', 'cmd-import', 'cmd-export'],
-        },
-        'plugin',
-    ],
-    'References': [],
-  },
+    docs: {
+        'Getting Started': [
+            'introduction',
+            'installation',
+            'tutorial',
+            'examples-dev',
+            'examples-non-dev',
+        ],
+        'Features': [
+            'features',
+            'gen-code',
+            'gen-diagram',
+            'gen-docs',
+            'gen-db',
+            'gen-test',
+        ],
+        'Advanced Guides': [
+            'lang-spec',
+            {
+                "Command Documentation": [
+                    'cmd',
+                    'cmd-import',
+                    'cmd-export',
+                    'common-flags'
+                ],
+            },
+            'plugin',
+        ],
+    },
 };
