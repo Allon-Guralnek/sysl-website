@@ -1,6 +1,6 @@
 module.exports = {
   title: 'Sysl',
-  tagline: 'System Specification Language',
+  tagline: 'Deliver code, data models and visualisations from a single language',
   url: 'https://sysl.io',
   baseUrl: '/',
   favicon: 'img/logo-blue-net-s.png',
