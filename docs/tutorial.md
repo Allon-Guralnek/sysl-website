@@ -13,7 +13,7 @@ Sysl specifications appear similar to [YAML](https://en.wikipedia.org/wiki/YAML)
 
 Let's start with a simple example: modelling a greeting system that will authenticate the user to get their name, and then display a personalised greeting. By the end we'll be generating diagrams like this:
 
-![Sequence diagram of the Greeting scenario](../examples/tutorial/out/4_hello_project_sd.png)
+![Sequence diagram of the Greeting scenario](/img/tutorial/4_hello_project_sd.png)
 
 ## Applications
 
@@ -127,7 +127,7 @@ sysl sd --endpoint="Hello App <- Greet" hello.sysl
 
 This produces the diagram below:
 
-![Sequence diagram of the Greet endpoint](../examples/tutorial/out/3_hello_communication_sd.png)
+![Sequence diagram of the Greet endpoint](/img/tutorial/3_hello_communication_sd.png)
 
 This shows `Hello App` sending a `GET /greeting/{userId}` request to `HelloService`. Great!
 
@@ -171,19 +171,19 @@ Let's take a look:
 sysl sd --app HelloProject hello.sysl
 ```
 
-![Sequence diagram of the Greeting scenario](../examples/tutorial/out/4_hello_project_sd.png)
+![Sequence diagram of the Greeting scenario](/img/tutorial/4_hello_project_sd.png)
 
 ```bash
 sysl ints --project HelloProject hello.sysl
 ```
 
-![Integration diagram of the Greeting scenario](../examples/tutorial/out/4_hello_project_ints.png)
+![Integration diagram of the Greeting scenario](/img/tutorial/4_hello_project_ints.png)
 
 ```bash
 sysl ints --epa --project HelloProject hello.sysl
 ```
 
-![Endpoint analysis diagram of the Greeting scenario](../examples/tutorial/out/4_hello_project_epa.png)
+![Endpoint analysis diagram of the Greeting scenario](/img/tutorial/4_hello_project_epa.png)
 
 Now we're getting somewhere! These diagrams are pretty basic, but they will grow with the Sysl model. You can also customise them with additional model attributes and command line flags. See [Diagram Generation](gen-diagram.md) for more details.
 
