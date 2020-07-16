@@ -14,8 +14,8 @@ module.exports = {
         src: 'img/logo-blue-net-s.png',
       },
       links: [
-        { to: 'docs/', label: 'Docs', position: 'right' },
-        { to: 'docs/help', label: 'Help', position: 'right' },
+        { to: 'docs', label: 'Docs', position: 'right' },
+        { to: 'docs/discussions', label: 'Community', position: 'right' },
         { to: 'blog', label: 'Blog', position: 'right' },
         {
           href: 'https://anz-bank.github.io/sysl-playground/',
@@ -45,6 +45,10 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
             'https://github.com/anz-bank/sysl-website/edit/master/docs/',
+        },
+        community: {
+          homePageId: 'discussions',
+          sidebarPath: require.resolve('./sidebars.js'),
         },
         blog: {
           showReadingTime: true,

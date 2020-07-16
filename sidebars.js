@@ -5,7 +5,7 @@ module.exports = {
             'installation',
             'tutorial',
             'examples-dev',
-            'examples-non-dev',
+            'examples-nondev',
         ],
         'Features': [
             'features',
@@ -28,4 +28,9 @@ module.exports = {
             'plugin',
         ],
     },
+    community: [
+        'discussions',
+        'resources',
+        'faq',
+    ],
 };

@@ -1,5 +1,5 @@
 ---
-id: examples-non-dev
+id: examples-nondev
 title: Non-Developer Use Cases
 sidebar_label: Non-Developer Use Cases
 ---
