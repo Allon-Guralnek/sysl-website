@@ -14,6 +14,7 @@ module.exports = {
         src: 'img/logo-blue-net-s.png',
       },
       links: [
+        { to: '/', label: 'Home', position: 'right' },
         { to: 'docs', label: 'Docs', position: 'right' },
         { to: 'docs/discussions', label: 'Community', position: 'right' },
         { to: 'blog', label: 'Blog', position: 'right' },

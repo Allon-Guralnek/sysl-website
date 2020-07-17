@@ -23,24 +23,3 @@ Stack Overflow is a popular forum to ask code-level questions or if you're stuck
 To report a bug, please use our [Issues page on GitHub](https://github.com/anz-bank/sysl/issues/new/choose).
 
 Or, to be a hero, you can fork Sysl, fix the bug yourself and create a pull request to fix it for everyone. Please have a look at the [contributing guide](https://github.com/anz-bank/sysl/blob/master/docs/CONTRIBUTING.md) for more information.
-
-
-1. sysl.io
-2. GitHub: 
-	* report a bug
-	* request a feature
-	* contributing to sysl/sysl-website (contributing.md)
-4. sysl oss slack
-5. FAQ
-6. Tips&Tricks
-StackOverflow?
-
-## Community resources
-1. playground
-2. docker
-3. brew
-4. IDE Plugin: https://github.com/anz-bank/vscode-sysl
-
-## Stay informed
-1. [blog](/blog)
-2. [release notes](https://github.com/anz-bank/sysl/releases)

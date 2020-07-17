@@ -7,7 +7,7 @@ sidebar_label: Language Specification
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 :::caution
-WIP, copied from sysl/docs/language. Still mostly relevant.
+WIP, copied from https://sysl.io/docs/language/. Still mostly relevant.
 
 **TODO:**
 * Update and polish content.
@@ -15,8 +15,6 @@ WIP, copied from sysl/docs/language. Still mostly relevant.
 :::
 
 ---
-
-Reference: https://sysl.io/docs/language/
 
 ## Introduction
 
@@ -277,7 +275,7 @@ Server:
 Header and body parameters can be defined using brackets (foo <: int)
 To create a body parameter, we use the pattern ~body e.g `(bodyParam <: int [~body])`
 To create a header parameter, we use the pattern ~header e.g `(bodyParam <: int [~header])`
-Larameters are separated by commas
+Parameters are separated by commas
 ```
 Server:
     /first:
@@ -645,7 +643,7 @@ Client:
     Server <- Login
 ```
 
-Above code assumes, server and client files are in the same directory. If they are in different directories, you must have atleast a common root directory and `import /path/from/root`.
+Above code assumes, server and client files are in the same directory. If they are in different directories, you must have at least a common root directory and `import /path/from/root`.
 
 All sysl commands accept `--root` argument. Run `sysl -h` or `reljam -h` for more details.
 
@@ -654,7 +652,7 @@ All sysl commands accept `--root` argument. Run `sysl -h` or `reljam -h` for mor
 
 You have `server.sysl`, `client.sysl` and `deps/deps.sysl`. `server.sysl` and
 `client.sysl` files are in the same directory. `deps.sysl` file in the
-subdirectory. You can import `server.sysl` and `deps.sysl` files in
+sub-directory. You can import `server.sysl` and `deps.sysl` files in
 `client.sysl` as below:
 
 ```sysl

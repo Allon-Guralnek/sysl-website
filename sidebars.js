@@ -20,9 +20,21 @@ module.exports = {
             {
                 "Command Documentation": [
                     'cmd',
+                    'common-flags',
+                    'cmd-validate',
+                    'cmd-info',
+                    'cmd-env',
+                    'cmd-sd',
+                    'cmd-integrations',
+                    'cmd-datamodel',
+                    'cmd-db',
+                    'cmd-db-delta',
+                    'cmd-codegen',
                     'cmd-import',
                     'cmd-export',
-                    'common-flags'
+                    'cmd-protobuf',
+                    'cmd-repl',
+                    'cmd-template',
                 ],
             },
             'plugin',
