@@ -16,7 +16,6 @@ function Home() {
       <Hero />
       <main>
         <Deliver />
-        <Tryout />
         <WhySysl />
       </main>
     </Layout>

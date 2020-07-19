@@ -4,15 +4,7 @@ title: REPL
 sidebar_label: REPL
 ---
 
-:::caution
-WIP, copied from https://sysl.io/docs/commands/repl/.
-
-**TODO:**
-* Update and polish content.
-* Move referenced assets to a permanent directory on GitHub and update links.
-:::
-
----
+## Summary
 
 The `sysl repl` command creates an interactive session where Sysl syntax can be evaluated.
 

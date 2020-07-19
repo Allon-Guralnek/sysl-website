@@ -14,6 +14,8 @@ WIP, copied from https://sysl.io/docs/commands/validate/.
 
 ---
 
+## Summary
+
 The `sysl validate` command is used to verify that sysl files are valid.
 
 ## Usage

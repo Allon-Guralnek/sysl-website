@@ -26,6 +26,7 @@ blackboxes
 bodyParam
 bool
 byexample
+ccf
 cd
 classname
 CLI
@@ -54,6 +55,7 @@ dir
 Dockerfile
 Docusaurus
 docusaurus
+ee
 EmailNotifier
 enum
 env
@@ -63,6 +65,7 @@ eplongname
 epname
 extensibility
 faq
+fb
 filepath
 fka
 fmt
@@ -98,6 +101,7 @@ jsx
 lang
 Linter
 linter
+linux
 localhost
 LoginData
 LoginResponse

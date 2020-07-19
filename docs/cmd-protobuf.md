@@ -14,6 +14,7 @@ WIP, copied from https://sysl.io/docs/commands/protobuf/.
 
 ---
 
+## Summary
 
 The `sysl protobuf` command is used to generate a proto representation of the Sysl file.
 Two format types are supported:
@@ -85,6 +86,7 @@ Optional flags:
 - `` root, but the module can not import with absolute paths (or imports must be relative).
 - `-o, --output="-"` output file name
 - `--mode=textpb` output mode: [textpb,json]
+
 
 ## Arguments
 

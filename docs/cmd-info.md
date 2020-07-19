@@ -4,23 +4,14 @@ title: Binary Information
 sidebar_label: Binary Information
 ---
 
-:::caution
-WIP, copied from https://sysl.io/docs/commands/info/.
-
-**TODO:**
-* Update and polish content.
-* Move referenced assets to a permanent directory on GitHub and update links.
-:::
-
----
-
+## Summary
 
 The `sysl info` command provides information about the sysl binary.
 
 ## Usage
 
-```bash
-usage: sysl info
+```
+sysl info
 ```
 
 ## Output
@@ -29,12 +20,9 @@ Example output:
 
 ```
 Build:
-  Version      : 1b2c16f0-feature/sysl-ui-2020-03-13T00:35:40Z
-  Git Commit   : 1b2c16f0
-  Date         : 2020-03-13T00:35:41Z
-  Go Version   : unspecified
-  OS           : unspecified
-Runtime:
-  GOOS/GOARCH  : darwin/amd64
-  Go Version   : go1.13.7
+  Version      : v0.144.0
+  Git Commit   : 4493a3e49ee3d95a6d4a78b16c9ccf712e2fb94d
+  Date         : 2020-07-17T03:33:55Z
+  Go Version   : go1.13.14 linux/amd64
+  OS           : darwin/amd64
 ```

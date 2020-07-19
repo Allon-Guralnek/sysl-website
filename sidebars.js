@@ -13,7 +13,7 @@ module.exports = {
             'gen-diagram',
             'gen-docs',
             'gen-db',
-            'gen-test',
+            // 'gen-test',
         ],
         'Advanced Guides': [
             'lang-spec',
@@ -37,7 +37,7 @@ module.exports = {
                     'cmd-template',
                 ],
             },
-            'plugin',
+            // 'plugin',
         ],
     },
     community: [
