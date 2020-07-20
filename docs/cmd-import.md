@@ -10,7 +10,7 @@ sidebar_label: Import
 
 ## Usage
 
-```
+```bash
 sysl import --input=<FILE-TO-IMPORT.EXT> --app-name=<APP-NAME> [<flags>]
 ```
 
@@ -38,7 +38,7 @@ Currently, the supported formats include:
 
 Command line
 
-```
+```bash
 sysl import --input=simple-api.yaml --app-name=Simple --output=simple-api.sysl
 ```
 
@@ -112,7 +112,7 @@ Simple "Simple":
 
 Command line
 
-```
+```bash
 sysl import --input=simple-swagger.yaml --app-name=Simple --output=simple-swagger.sysl
 ```
 
@@ -167,7 +167,7 @@ Simple "Simple":
 
 Command line
 
-```
+```bash
 sysl import --input=simple-xsd.xsd --app-name=Simple --output=simple-xsd.sysl
 ```
 

@@ -10,7 +10,7 @@ sidebar_label: Export
 
 ## Usage
 
-```
+```bash
 sysl export [<flags>] <MODULE>
 ```
 
@@ -37,7 +37,7 @@ Currently, the supported formats include:
 
 Command line
 
-```
+```bash
 sysl export --format="openapi3" --app-name="SimpleOpenAPI3" --output="simple-openapi3.yaml" simple-openapi3.sysl
 ```
 
@@ -101,7 +101,7 @@ servers:
 
 Command line
 
-```
+```bash
 sysl export --format="swagger" --output="simple-swagger.yaml" --app-name="SimpleSwagger" simple-swagger.sysl
 ```
 

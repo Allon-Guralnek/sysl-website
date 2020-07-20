@@ -4,92 +4,200 @@ title: Protobuf
 sidebar_label: Protobuf
 ---
 
-:::caution
-WIP, copied from https://sysl.io/docs/commands/protobuf/.
-
-**TODO:**
-* Update and polish content.
-* Move referenced assets to a permanent directory on GitHub and update links.
-:::
-
----
-
 ## Summary
 
-The `sysl protobuf` command is used to generate a proto representation of the Sysl file.
-Two format types are supported:
+`sysl protobuf` converts a Sysl file to a [protobuf](https://developers.google.com/protocol-buffers) representation, which can be consumed by programs in other languages. The output is encoded using the [Sysl protobuf definition](https://github.com/anz-bank/sysl/blob/master/pkg/sysl/sysl.proto).
 
-| Flag      | Description                                              |
-| --------- | -------------------------------------------------------- |
-| json      | JSON Protocol Buffer files of the Sysl definitions         |
-| textpb    | Text based Protocol Buffer files of the Sysl definitions   |
+## Usage
 
-Protocol buffers is a "language-neutral, platform-neutral, extensible mechanism for serializing structured data – think XML, but smaller, faster, and simpler". It is a strongly typed binary format used as intermediate representations of Sysl definitions comparable to an abstract syntax tree. The strongly typed protocol buffers are supported in most major programming languages.
-
-For the following contents of `hello.sysl`
-
-```
-HelloWorld:
-    !type Message:
-        text <: string
+```bash
+sysl protobuf --mode=[textpb, json, pb] --output=<output file name> [<flags>]
 ```
 
-the command
+## Optional flags
 
-    sysl textpb hello.sysl --out hello.textpb
+- `--mode` Output file format which can be `textpb` (the [prototext format](https://pkg.go.dev/google.golang.org/protobuf/encoding/prototext?tab=doc)), `json` (JSON with some embedding of types) or `pb` (binary proto encoding).
+- `-o, --output` Output filename. If not provided, the protobuf output will be printed to `stdout`.
 
-generates a `hello.textpb` file. Its contents are
+[More common optional flags](common-flags)
 
+## Examples
+
+### `textpb` mode
+
+Command line
+
+```bash
+sysl protobuf --mode=textpb --output=simple.textpb simple.sysl
 ```
-apps {
-  key: "HelloWorld"
-  value {
-    name {
-      part: "HelloWorld"
+
+```sysl title="Input Sysl file: simple.sysl"
+Simple "Simple":
+    @description =:
+        | Simple demo for protobuf export
+
+    # definitions
+    !type SimpleObj:
+        name <: string?:
+            @json_tag = "name"
+```
+
+```sysl title="Output textpb file: simple.textpb"
+apps: {
+  key: "Simple"
+  value: {
+    name: {
+      part: "Simple"
     }
-    types {
-      key: "Message"
-      value {
-        tuple {
-          attr_defs {
-            key: "text"
-            value {
+    long_name: "Simple"
+    attrs: {
+      key: "description"
+      value: {
+        s: "Simple demo for protobuf export\n"
+      }
+    }
+    types: {
+      key: "SimpleObj"
+      value: {
+        tuple: {
+          attr_defs: {
+            key: "name"
+            value: {
               primitive: STRING
-              source_context {
-                start {
-                  line: 4
+              attrs: {
+                key: "json_tag"
+                value: {
+                  s: "name"
+                }
+              }
+              opt: true
+              source_context: {
+                file: "simple.sysl"
+                start: {
+                  line: 8
+                  col: 16
+                }
+                end: {
+                  line: 8
+                  col: 30
                 }
               }
             }
           }
         }
+        source_context: {
+          file: "simple.sysl"
+          start: {
+            line: 6
+            col: 4
+          }
+          end: {
+            line: 8
+            col: 30
+          }
+        }
+      }
+    }
+    source_context: {
+      file: "simple.sysl"
+      start: {
+        line: 1
+        col: 1
+      }
+      end: {
+        line: 1
+        col: 7
       }
     }
   }
 }
-
-## Usage
-
-```bash
-usage: sysl protobuf [<flags>] <MODULE>
 ```
 
-## Optional Flags
+### `json` mode
 
-Optional flags:
+Command line
 
-- `--help` Show context-sensitive help (also try --help-long and --help-man).
-- `--version` Show application version.
-- `--log="warn"` log level: [info,warn,trace,off,debug]
-- `-v, --verbose` enable verbose logging
-- `--root=ROOT` sysl root directory for input model file. If root is not found, the module directory becomes the
-- `` root, but the module can not import with absolute paths (or imports must be relative).
-- `-o, --output="-"` output file name
-- `--mode=textpb` output mode: [textpb,json]
+```bash
+sysl protobuf --mode=json --output=simple.json simple.sysl
+```
 
+```sysl title="Input Sysl file: simple.sysl"
+Simple "Simple":
+    @description =:
+        | Simple demo for protobuf export
 
-## Arguments
+    # definitions
+    !type SimpleObj:
+        name <: string?:
+            @json_tag = "name"
+```
 
-Args:
-
-- `<MODULE>` Input sysl file that contains the system specifications. e.g `simple.sysl`. The `.sysl` file type is optional.
+```sysl title="Output json file: simple.json"
+{
+ "apps": {
+  "Simple": {
+   "name": {
+    "part": [
+     "Simple"
+    ]
+   },
+   "longName": "Simple",
+   "attrs": {
+    "description": {
+     "s": "Simple demo for protobuf export\n"
+    }
+   },
+   "types": {
+    "SimpleObj": {
+     "tuple": {
+      "attrDefs": {
+       "name": {
+        "primitive": "STRING",
+        "attrs": {
+         "json_tag": {
+          "s": "name"
+         }
+        },
+        "opt": true,
+        "sourceContext": {
+         "file": "simple.sysl",
+         "start": {
+          "line": 8,
+          "col": 16
+         },
+         "end": {
+          "line": 8,
+          "col": 30
+         }
+        }
+       }
+      }
+     },
+     "sourceContext": {
+      "file": "simple.sysl",
+      "start": {
+       "line": 6,
+       "col": 4
+      },
+      "end": {
+       "line": 8,
+       "col": 30
+      }
+     }
+    }
+   },
+   "sourceContext": {
+    "file": "simple.sysl",
+    "start": {
+     "line": 1,
+     "col": 1
+    },
+    "end": {
+     "line": 1,
+     "col": 7
+    }
+   }
+  }
+ }
+}
+```

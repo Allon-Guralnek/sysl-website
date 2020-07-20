@@ -132,6 +132,7 @@ proto
 protobuf
 protobufs
 protoc
+pb
 pwd
 PWD
 queryParamName
@@ -194,3 +195,9 @@ XSD
 YAML
 yaml
 zshrc
+attrDefs
+attrs
+longName
+sourceContext
+stdout
+prototext
