@@ -21,6 +21,10 @@ sysl protobuf --mode=[textpb, json, pb] --output=<output file name> [<flags>]
 
 [More common optional flags](common-flags)
 
+## Arguments
+
+- `<MODULE>` Input sysl file that contains the system specifications. e.g `simple.sysl`. The `.sysl` file type is optional.
+
 ## Examples
 
 ### `textpb` mode
