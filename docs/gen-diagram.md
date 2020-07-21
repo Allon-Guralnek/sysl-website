@@ -5,27 +5,37 @@ title: Diagram Generation
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-:::caution
-WIP, copied from https://sysl.io/features/diagrams/.
-
-**TODO:**
-* Update and polish content.
-* Move referenced assets to a permanent directory on GitHub and update links.
+:::info
+We are currently in the process of migrating from PlantUML to Mermaid for our diagram generation. This will remove the external dependency on PlantUML and offer a better user experience. Diagram generation with mermaid is currently supported for integration diagrams and sequence diagrams only. For more details, check out [sysl diagram](cmd-diagram)
 :::
 
 ---
 
+Sysl lets you generate various diagrams from your specificatinos so that you can visualise your design as it evolves. These capabilities become more and more valuable as your project grows to include multiple services and complex dependencies.
 
-Sysl can generate various different diagrams. Sysl aims to generate code and documentation from only one source of truth i.e. .sysl files.
+## Integration Diagrams
 
-## Sequence diagrams
+Integration diagrams shows you which applications which make up your architecture and how they interact with each other.
 
-For an example refer to [sequence-diagrams](/docs/byexample/sequence-diagrams/)
-For details on the command, refer to [sequence](/docs/commands/sd)
+![Integration diagram](/img/sysl/int-diagram-mermaid.svg)
+
+For more details, refer to [Integration Diagram](cmd-integrations)
+
+## Sequence Diagrams
+
+Sequence diagrams show how a call to an endpoint propagates through your system.
+
+For more details, refer to [Sequence Diagrams](cmd-sd)
+
+![Sequence diagram](/img/sysl/seq-diagram-mermaid.svg)
+
+## Datamodel Diagrams
+
+For details on the command, refer to [Datamodel Diagram](cmd-datamodel)
 
 ### Format Arguments
 
-The default diagram by default only shows the data type that is returned by an endpoint. You can instruct `sysl` to show the arguments to your endpoint in a sequence diagram.
+The default diagram only shows the data type that is returned by an endpoint. You can instruct `sysl` to show the arguments to your endpoint in a sequence diagram.
 
 Command:
 
@@ -99,13 +109,6 @@ See <a href={useBaseUrl('img/sysl/attribs.sysl')} >attribs.sysl</a> for complete
 
 <img alt="Sequence Diagram" src={useBaseUrl('img/sysl/attribs-Seq.png')} />
 
-## Integration diagrams
 
-For an example refer to [integration-diagrams](/docs/byexample/integration-diagrams/)
-For details on the command, refer to [integrations](/docs/commands/integrations)
 
-## Datamodel diagrams
-
-For an example refer to [data-model-diagrams](/docs/byexample/data-model-diagrams/)
-For details on the command, refer to [datamodel](/docs/commands/datamodel)
 

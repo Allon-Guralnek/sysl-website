@@ -22,6 +22,7 @@ module.exports = {
                     'cmd',
                     'common-flags',
                     'cmd-validate',
+                    'cmd-diagram',
                     'cmd-info',
                     'cmd-env',
                     'cmd-sd',

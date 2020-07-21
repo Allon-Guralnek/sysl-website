@@ -1,8 +1,9 @@
 ---
-id: cmd-integrations
-title: Integration Diagram
-sidebar_label: Integration Diagram
+id: cmd-diagram
+title: Mermaid Diagram (beta)
+sidebar_label: Mermaid Diagram (beta)
 ---
+
 
 :::info
 We are currently in the process of migrating from PlantUML to Mermaid for our diagram generation. This will remove the external dependency on PlantUML and offer a better user experience. Diagram generation with mermaid is currently supported for integration diagrams and sequence diagrams only. For more details, check out [sysl diagram](cmd-diagram)
@@ -13,50 +14,32 @@ This command requires the SYSL_PLANTUML environment variable to be set or passed
 :::
 ---
 
+## Summary
 
-The `sysl integrations` command generates integration diagrams. The command requires a project to be specified to produce an integration diagram. Refer to the examples for more details.
+`sysl diagram` lets you generate sequence or integration diagrams from your specification files using MermaidJS.
 
 ## Usage
 
 ```bash
-usage: sysl integrations [<flags>] <MODULE>
+sysl diagram [<flags>] <MODULE>
 ```
-
-Aliases
-
-- ints `usage: sysl ints [<flags>] <MODULE>`
-
-## Required Flags
-
-- `-j, --project=PROJECT` project pseudo-app to render
 
 ## Optional Flags
 
-- `-t, --title=TITLE` diagram title
-- `-p, --plantuml=PLANTUML` base url of PlantUML server (default: SYSL_PLANTUML or http://localhost:8080/plantuml
-- `` see http://plantuml.com/server.html#install for more info)
-- `-o, --output="%(epname).png"` output file(default: %(epname).png)
-
-- `--filter=FILTER` Only generate diagrams whose output paths match a pattern
-- `-e, --exclude=EXCLUDE ...` apps to exclude
-- `-c, --clustered` group integration components into clusters
-- `--epa` produce and EPA integration view
+- `-i, --integrationdiagram=INTEGRATIONDIAGRAM`  Generate an integration diagram (Specify the application name)
+- `-s, --sequencediagram=SEQUENCEDIAGRAM`  Generate a sequence diagram (Specify 'appname->endpoint')
+- `-e, --endpointanalysis`  Generate an integration diagram with its endpoints (Specify 'true')
+- `-d, --datadiagram`       Generate a Data model diagram (Specify 'true')
+- `-a, --app=APP`               Optional flag to specify specific application
+- `-e, --endpoint=ENDPOINT`     Optional flag to specify endpoint
+- `-o, --output="diagram.svg"`  Output file (Default: diagram.svg)
 
 [More common optional flags](common-flags)
 
-## Arguments
+## Sequence Diagram
 
-Args:
-
-- `<MODULE>` Input sysl file that contains the system specifications. e.g `simple.sysl`. The `.sysl` file type is optional.
-
-## Examples
-
-### Simple Integration Diagram
-
-Command line
 ```bash
-sysl integrations -o epa.png --project Project GroceryStore.sysl
+sysl diagram -s grocerystore.sysl --app GroceryStore --endpoint "POST /checkout"
 ```
 
 ```sysl title="Input Sysl file: GroceryStore.sysl"
@@ -79,20 +62,11 @@ Payment:
             | Processes a payment
             return ok <: string
 
-Project [appfmt="%(appname)"]:
-    _:
-        GroceryStore
-        Payment
 ```
 
-![Integration diagram](/img/sysl/integration-diagram-puml.png)
+![Sequence diagram](/img/sysl/seq-diagram-mermaid.svg)
 
-### Endpoint Analysis Diagram
-
-Command line
-```bash
-sysl integrations -o epa.png --project Project --epa GroceryStore.sysl
-```
+## Integration Diagram
 
 ```sysl title="Input Sysl file: GroceryStore.sysl"
 GroceryStore:
@@ -113,11 +87,11 @@ Payment:
         POST:
             | Processes a payment
             return ok <: string
-	
-Project [appfmt="%(appname)"]:
-    _:
-        GroceryStore
-        Payment
+
 ```
 
-![EPA diagram](/img/sysl/epa-diagram-puml.png)
+```bash
+sysl diagram -i grocerystore.sysl --app GroceryStore
+```
+
+![Integration diagram](/img/sysl/int-diagram-mermaid.svg)

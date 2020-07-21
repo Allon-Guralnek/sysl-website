@@ -4,17 +4,20 @@ title: Sequence Diagram
 sidebar_label: Sequence Diagram
 ---
 
-:::caution
-WIP, copied from https://sysl.io/docs/commands/sd/.
 
-**TODO:**
-* Update and polish content.
-* Move referenced assets to a permanent directory on GitHub and update links.
+:::info
+We are currently in the process of migrating from PlantUML to Mermaid for our diagram generation. This will remove the external dependency on PlantUML and offer a better user experience. Diagram generation with mermaid is currently supported for integration diagrams and sequence diagrams only. For more details, check out [sysl diagram](cmd-diagram)
 :::
 
+:::info
+This command requires the SYSL_PLANTUML environment variable to be set or passed in as a flag. Follow the instructions [here](plantuml.md) for more details
+:::
 ---
 
-The `sysl sd` command is used to generate a sequence diagram. For an example, refer to <https://sysl.io/docs/byexample/sequence-diagrams/>
+`sysl sd` lets you generate a sequence diagram originating from a single endpoint.
+
+![Sequence diagram](/img/sysl/seq-diagram-puml.png)
+
 
 ## Usage
 
@@ -22,17 +25,15 @@ The `sysl sd` command is used to generate a sequence diagram. For an example, re
 
 ## Required Flags
 
+- `-s, --endpoint=ENDPOINT ...`Include endpoint in sequence diagram
+- `-a, --app=APP ...`Include all endpoints for app in sequence diagram (currently only works with
+  templated --output). Use SYSL_SD_FILTERS env (a comma-list of shell globs) to limit
+  the diagrams generated
+
 ## Optional Flags
 
 Optional flags:
 
-- `--help`Show context-sensitive help (also try --help-long and --help-man).
-- `--version`Show application version.
-- `--log="warn"`log level: [debug,info,warn,trace,off]
-- `-v, --verbose`enable verbose logging
-- `--root=ROOT`sysl root directory for input model file. If root is not found, the module directory
-  becomes the root, but the module can not import with absolute paths (or imports must
-  be relative).
 - `--endpoint_format="%(epname)"`
   Specify the format string for sequence diagram endpoints. May include %(epname),
   %(eplongname) and %(@foo) for attribute foo (default: %(epname))
@@ -42,16 +43,49 @@ Optional flags:
 - `-p, --plantuml=PLANTUML`base url of PlantUML server (default: SYSL_PLANTUML or http://localhost:8080/plantuml
   see http://plantuml.com/server.html#install for more info)
 - `-o, --output="%(epname).png"`output file (default: %(epname).png)
-- `-s, --endpoint=ENDPOINT ...`Include endpoint in sequence diagram
-- `-a, --app=APP ...`Include all endpoints for app in sequence diagram (currently only works with
-  templated --output). Use SYSL_SD_FILTERS env (a comma-list of shell globs) to limit
-  the diagrams generated
 - `-b, --blackbox=BLACKBOX ...`Input blackboxes in the format App <- Endpoint=Some description, repeat '-b App <-
   Endpoint=Some description' to set multiple blackboxes
 - `-g, --groupby=GROUPBY`Enter the groupby attribute (apps having the same attribute value are grouped
   together in one box
 
+[More common optional flags](common-flags)
+
 ## Arguments
 
 Args:
 `<MODULE>` Input sysl file that contains the system specifications. e.g `simple.sysl`. The `.sysl` file type is optional.
+
+
+## Examples
+
+### Simple Sequence Diagram
+
+Command line
+```bash
+sysl sd -s "GroceryStore <- POST /checkout" GroceryStore.sysl -o checkout.png
+```
+
+```sysl title="Input Sysl file: GroceryStore.sysl"
+GroceryStore:
+    /checkout:
+        POST?payment_info=string: 
+            Payment <- POST /validate
+            Payment <- POST /pay
+            | Checks out the specified cart
+            return ok <: string
+
+Payment:
+    /validate:
+        POST?payment_info=string:
+            | Validates payment information
+            return 200 <: string
+
+    /pay:
+        POST:
+            | Processes a payment
+            return ok <: string
+
+```
+
+
+![Sequence diagram](/img/sysl/seq-diagram-puml.png)

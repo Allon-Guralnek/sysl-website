@@ -4,18 +4,14 @@ title: Data Model Diagram
 sidebar_label: Data Model Diagram
 ---
 
-:::caution
-WIP, copied from https://sysl.io/docs/commands/datamodel/.
 
-**TODO:**
-* Update and polish content.
-* Move referenced assets to a permanent directory on GitHub and update links.
+:::info
+We are currently in the process of migrating from PlantUML to Mermaid for our diagram generation. This will remove the external dependency on PlantUML and offer a better user experience. Diagram generation with mermaid is currently supported for integration diagrams and sequence diagrams only. For more details, check out [sysl diagram](cmd-diagram)
 :::
-
 ---
 
 
-The `sysl datamodel` command is generate data model diagrams defined in Sysl. For an example, refer to <https://sysl.io/docs/byexample/data-model-diagrams/>
+`sysl datamodel` lets you generate datamodel diagrams for types defined in Sysl.
 
 ## Usage
 
@@ -29,11 +25,6 @@ All flags are all optional.
 
 Optional flags:
 
-- `--help` Show context-sensitive help (also try --help-long and --help-man).
-- `--version` Show application version.
-- `--log="warn"` log level: [trace,off,debug,info,warn]
-- `-v, --verbose` enable verbose logging
-- `--root=ROOT` sysl root directory for input model file. If root is not found, the module directory becomes the root, but the module can not import with absolute paths (or imports must be relative).
 - `--class_format="%(classname)"`
 - ` Specify the format string for data diagram participants. May include %%(appname) and %%(@foo) for attribute foo (default: %(classname))
 - `-t, --title=TITLE` Diagram title
@@ -42,6 +33,8 @@ Optional flags:
 - `-j, --project=PROJECT` Project pseudo-app to render
 - `-d, --direct` Process data model directly without project manner
 - `-f, --filter=FILTER` Only generate diagrams whose names match a pattern
+
+[More common optional flags](common-flags)
 
 ## Arguments
 
