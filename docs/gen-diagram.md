@@ -11,7 +11,7 @@ We are currently in the process of migrating from PlantUML to Mermaid for our di
 
 ---
 
-Sysl lets you generate various diagrams from your specificatinos so that you can visualise your design as it evolves. These capabilities become more and more valuable as your project grows to include multiple services and complex dependencies.
+Sysl lets you generate various diagrams from your specifications so that you can visualise your design as it evolves. These capabilities become more and more valuable as your project grows to include multiple services and complex dependencies.
 
 ## Integration Diagrams
 
