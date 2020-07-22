@@ -14,7 +14,7 @@ This command requires the SYSL_PLANTUML environment variable to be set or passed
 ---
 
 
-The `sysl integrations` command generates integration diagrams. The command requires a project to be specified to produce an integration diagram. Refer to the examples for more details.
+`sysl integrations` lets you generate integration diagrams. The command requires a project to be specified to produce an integration diagram. Refer to the examples for more details.
 
 ## Usage
 
@@ -25,6 +25,11 @@ usage: sysl integrations [<flags>] <MODULE>
 Aliases
 
 - ints `usage: sysl ints [<flags>] <MODULE>`
+
+## Output Formats
+
+The output file format can be specified via the extension passed into the -o flag.
+Valid formats include .svg, .png, .uml, .puml, .plantuml, .html or .link
 
 ## Required Flags
 
@@ -43,6 +48,7 @@ Aliases
 - `--epa` produce and EPA integration view
 
 [More common optional flags](common-flags)
+[Diagram format syntax](format-diagram)
 
 ## Arguments
 

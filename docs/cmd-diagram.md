@@ -6,23 +6,23 @@ sidebar_label: Mermaid Diagram (beta)
 
 
 :::info
-We are currently in the process of migrating from PlantUML to Mermaid for our diagram generation. This will remove the external dependency on PlantUML and offer a better user experience. Diagram generation with mermaid is currently supported for integration diagrams and sequence diagrams only. For more details, check out [sysl diagram](cmd-diagram)
-:::
-
-:::info
-This command requires the SYSL_PLANTUML environment variable to be set or passed in as a flag. Follow the instructions [here](plantuml.md) for more details
+We are currently in the process of migrating from PlantUML to Mermaid for our diagram generation. This will remove the external dependency on PlantUML and offer a better user experience. Diagram generation with mermaid is currently supported for integration diagrams and sequence diagrams only. 
 :::
 ---
 
 ## Summary
 
-`sysl diagram` lets you generate sequence or integration diagrams from your specification files using MermaidJS.
+`sysl diagram` lets you generate sequence or integration diagrams from your specification files using [MermaidJS](https://mermaidjs.github.io/#/).
 
 ## Usage
 
 ```bash
 sysl diagram [<flags>] <MODULE>
 ```
+
+## Output Formats
+
+Currently SVG is the only supported output format.
 
 ## Optional Flags
 
@@ -95,3 +95,27 @@ sysl diagram -i grocerystore.sysl --app GroceryStore
 ```
 
 ![Integration diagram](/img/sysl/int-diagram-mermaid.svg)
+
+## Data Model Diagram
+
+```sysl title="Input Sysl file: Payment.sysl"
+Payment:
+    !type CardInfo:
+        credit_card_number <: string:
+            @sensitive="true"
+        type <: string
+    !type Payment:
+        CardInfo <: CardInfo
+        Amount <: int
+
+PaymentService:
+    !type PaymentProvider:
+        Provider <: string
+
+```
+
+```bash
+sysl diagram -d Payment.sysl
+```
+
+![Integration diagram](/img/sysl/data-diagram-mermaid.svg)

@@ -23,6 +23,11 @@ This command requires the SYSL_PLANTUML environment variable to be set or passed
 
 `usage: sysl sd [<flags>] <MODULE>...`
 
+## Output Formats
+
+The output file format can be specified via the extension passed into the -o flag.
+Valid formats include .svg, .png, .uml, .puml, .plantuml, .html or .link
+
 ## Required Flags
 
 - `-s, --endpoint=ENDPOINT ...`Include endpoint in sequence diagram
@@ -49,6 +54,7 @@ Optional flags:
   together in one box
 
 [More common optional flags](common-flags)
+[Diagram format arguments](format-diagram)
 
 ## Arguments
 
