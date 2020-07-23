@@ -33,6 +33,10 @@ Sysl can generate server and client code. Currently, Go is the only language sup
 
 For details on the command, refer to [code-generation](/docs/cmd-codegen)
 
+## Prerequisites
+
+Add [sysl-go](https://github.com/anz-bank/sysl-go) to the dependency as the communication library used by SYSL-generated code as well as the available transforms.
+
 ## RESTful server
 Sysl can generate a RESTful service based on the sysl file. It requires the transform sysl file to generate service, router, interface and hander etc. Only requires custom code to implement the service interface to construct the full functional API server. The generated code will take care of the loging, middleware and error handling etc. The custom code only need to care about the business logic. 
 
