@@ -6,13 +6,13 @@ sidebar_label: Language Specification
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-:::caution
+<!-- :::caution
 WIP, copied from https://sysl.io/docs/language/. Still mostly relevant.
 
 **TODO:**
 * Update and polish content.
 * Move referenced assets to a permanent directory on GitHub and update links.
-:::
+::: -->
 
 ---
 

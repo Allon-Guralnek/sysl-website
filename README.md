@@ -13,11 +13,8 @@ sysl-website
 ├── blog                       // all the blogs
 ├── docs                       // all the docs
 ├── src
-│   ├── css
-│   │   └── custom.css
-│   └── pages
-│       ├── styles.module.css
-│       └── index.js            // homepage
+│   ├── css                     // common css
+│   └── pages                   // landing page components and css
 ├── static                      // website assets
 │   └── img
 ├── docusaurus.config.js        // configuration

@@ -191,7 +191,7 @@ Now we're getting somewhere! These diagrams are pretty basic, but they will grow
 
 This is just scratching the surface of what Sysl can do, but hopefully you're starting to see how it can be used to support and maintain the design, implementation and testing of an application, and of the whole enterprise.
 
-To learn more about how Sysl can support you in your role, take a deeper dive in the following guides:
+<!-- TODO: To learn more about how Sysl can support you in your role, take a deeper dive in the following guides:
 
 * [Sysl for Developers](examples-dev.md)
-* [Sysl for Non-Developers](examples-non-dev.md)
+* [Sysl for Non-Developers](examples-nondev.md) -->

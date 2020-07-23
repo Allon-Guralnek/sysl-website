@@ -8,7 +8,7 @@ function Deliver() {
     return (
         <React.Fragment>
         <div className={styles.deliver__title__section}>
-          <h1 className={classnames('text--primary text--center', styles.deliver__title)}>What Sysl delivers</h1>
+          <h1 className={classnames('text--primary text--center', styles.deliver__title)}>What Sysl Delivers</h1>
         </div>
         <div className={styles.deliver__section}>
           <div className={styles.deliver__body}>

@@ -20,7 +20,7 @@ module.exports = {
         { to: 'docs/discussions', label: 'Community', position: 'right' },
         { to: 'blog', label: 'Blog', position: 'right' },
         {
-          href: 'https://anz-bank.github.io/sysl-playground/',
+          href: 'https://cocky-raman-ef0bf4.netlify.app/', // TODO
           label: 'Play',
           position: 'right',
         },
