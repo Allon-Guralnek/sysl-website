@@ -1,6 +1,7 @@
 import React from 'react';
 import classnames from 'classnames';
 import styles from './styles.module.css';
+import deliveryStyles from '../Deliver/styles.module.css';
 
 const badges = [
     {
@@ -24,7 +25,7 @@ function WhySysl() {
     return (
         <React.Fragment>
             <div className={styles.why__sysl__title}>
-                <h1 className={classnames('text--primary text--center', styles.deliver__title)}>Why Sysl</h1>
+                <h1 className={classnames('text--primary text--center', deliveryStyles.deliver__title)}>Why Sysl</h1>
             </div>
             <div className={styles.why__sysl__curve}>
             </div>

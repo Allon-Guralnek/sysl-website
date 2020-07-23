@@ -36,10 +36,12 @@
 
 html {
   --ifm-color--text--desc: #4A4A4A;
+  --ifm-color--text--primary: #007DBA;
   --feature-svg--filter: none;
 }
 
 html[data-theme='dark'] {
   --ifm-color--text--desc: #FFFFFF;
+  --ifm-color--text--primary: #FFFFFF;
   --feature-svg--filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(346deg) brightness(104%) contrast(97%);
 }

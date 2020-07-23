@@ -8,10 +8,11 @@ module.exports = {
   projectName: 'sysl', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'Sysl',
+      title: '',
       logo: {
         alt: 'Sysl Logo',
-        src: 'img/logo-blue-net-s.png',
+        src: 'img/logo-blue.png',
+        srcDark: 'img/logo-white.png',
       },
       links: [
         { to: '/', label: 'Home', position: 'right' },
@@ -34,6 +35,14 @@ module.exports = {
     },
     footer: {
       copyright: `Copyright © ${new Date().getFullYear()} Sysl.`,
+    },
+    colorMode: {
+      // "light" | "dark"
+      defaultMode: 'light',
+
+      // Hides the switch in the navbar
+      // Useful if you want to support a single color mode
+      disableSwitch: false,
     },
   },
   presets: [

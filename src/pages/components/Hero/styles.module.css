@@ -6,27 +6,27 @@
 }
 .button__developer {
   background: #ffffff;
-  border: 2px solid #000000;
+  border: 2px solid #403f3f;
   border-radius: 4px;
   border-radius: 4px;
-  color: #000000;
-  font-weight: 400;
+  color: #403f3f;
+  font-weight: 500;
 }
 
 .button__non_developer {
   margin-left: 10px;
-  background: #000000;
-  border: 2px solid #000000;
+  background: #403f3f;
+  border: 2px solid #403f3f;
   border-radius: 4px;
   border-radius: 4px;
   color: #ffffff;
-  font-weight: 400;
-  border-color: #000000;
+  font-weight: 500;
+  border-color: #403f3f;
 }
 .button__non_developer:hover,
 .button__developer:hover {
   border: 2px solid #fdc83f;
-  background: #000000;
+  background: #4a4a4a;
   color: #fdc83f;
 }
 .hero__container {
