@@ -10,7 +10,7 @@ The `SYSL_PLANTUML` environment variable must be configured or passed in when us
 - `sysl integrations`
 - `sysl datamodel`
 
-To configure your PLANTUML environment variable, you can run the following
+To configure your `SYSL_PLANTUML` environment variable, you can run the following
 
 ```bash
 export SYSL_PLANTUML=<PLANTUML_SERVER_ADDRESS>
@@ -22,12 +22,20 @@ Alternatively, it can be passed into the command like so:
 sysl sd -p PLANTUML_SERVER_ADDRESS
 ```
 
+or set it before you run the command with
+
+```bash
+SYSL_PLANTUML=PLANTUML_SERVER_ADDRESS sysl sd ...
+```
+
+
+
 You can choose to use the public PlantUML service or run your own locally.
 
 ## Local PlantUML Service
 
 ```bash
-docker run -d -p 8080:8080 plantuml/plantuml-server:jetty-v1.2020.14
+docker run -d -p 8080:8080 --name plantuml plantuml/plantuml-server:jetty-v1.2020.14
 export SYSL_PLANTUML=http://localhost:8080
 ```
 

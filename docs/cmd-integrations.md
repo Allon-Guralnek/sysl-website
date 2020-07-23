@@ -24,8 +24,9 @@ usage: sysl integrations [<flags>] <MODULE>
 
 Aliases
 
-- ints `usage: sysl ints [<flags>] <MODULE>`
-
+```bash
+sysl ints [<flags>] <MODULE>
+```
 ## Output Formats
 
 The output file format can be specified via the extension passed into the -o flag.
@@ -48,6 +49,7 @@ Valid formats include .svg, .png, .uml, .puml, .plantuml, .html or .link
 - `--epa` produce and EPA integration view
 
 [More common optional flags](common-flags)
+
 [Diagram format syntax](format-diagram)
 
 ## Arguments

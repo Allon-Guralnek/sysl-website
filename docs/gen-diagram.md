@@ -6,7 +6,7 @@ title: Diagram Generation
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 :::info
-We are currently in the process of migrating from PlantUML to Mermaid for our diagram generation. This will remove the external dependency on PlantUML and offer a better user experience. Diagram generation with mermaid is currently supported for integration diagrams and sequence diagrams only. For more details, check out [sysl diagram](cmd-diagram)
+We are currently in the process of migrating from PlantUML to Mermaid for our diagram generation. This will remove the external dependency on PlantUML and offer a better user experience. Diagram generation with Mermaid is currently supported for integration diagrams and sequence diagrams only. For more details, check out [sysl diagram](cmd-diagram).
 :::
 
 ---
@@ -25,9 +25,9 @@ For more details, refer to [Integration Diagram](cmd-integrations)
 
 Sequence diagrams show how a call to an endpoint propagates through your system.
 
-For more details, refer to [Sequence Diagram](cmd-sd)
+<img alt="Sequence Diagram" src={useBaseUrl('img/sysl/attribs-Seq.png')} max-width="80%"/>
 
-![Sequence diagram](/img/sysl/seq-diagram-mermaid.svg)
+For more details, refer to [Sequence Diagram](cmd-sd)
 
 ## Data Model Diagrams
 

@@ -6,17 +6,17 @@ sidebar_label: Data Model Diagram
 
 
 :::info
-We are currently in the process of migrating from PlantUML to Mermaid for our diagram generation. This will remove the external dependency on PlantUML and offer a better user experience. Diagram generation with mermaid is currently supported for integration diagrams and sequence diagrams only. For more details, check out [sysl diagram](cmd-diagram)
+We are currently in the process of migrating from PlantUML to Mermaid for our diagram generation. This will remove the external dependency on PlantUML and offer a better user experience. Diagram generation with Mermaid is currently supported for integration diagrams and sequence diagrams only. For more details, check out [sysl diagram](cmd-diagram).
 :::
 
 
 :::info
-This command requires the SYSL_PLANTUML environment variable to be set or passed in as a flag. Follow the instructions [here](plantuml.md) for more details
+This command requires the `SYSL_PLANTUML` environment variable to be set or passed in as a flag. Follow the instructions [here](plantuml.md) for more details.
 :::
 ---
 
 
-`sysl datamodel` lets you generate data model diagrams for types defined in Sysl.
+`sysl datamodel generates data model diagrams for types defined in Sysl.
 
 ## Usage
 
@@ -26,13 +26,14 @@ usage: sysl datamodel [<flags>] <MODULE>
 
 ## Output Formats
 
-The output file format can be specified via the extension passed into the -o flag.
-Valid formats include .svg, .png, .uml, .puml, .plantuml, .html or .link
+The output file format can be specified via the extension of the filename passed into the `-o` flag.
+
+Valid extensions include `.svg`, `.png`, `.uml`, `.puml`, `.plantuml`, `.html` or `.link`.
 
 
 ## Required Flags
 
-Either the project flag or the direct flag must be passed in. The direct flag generates data model diagrams for ALL types defined in the input sysl file. The project flag specifies a subset of applications to generate diagrams for. Refer to the [Project Datamodel Diagram](#project-datamodel-diagram) example for more info.
+Either the `project` flag or the `direct` flag must be passed in. The `direct` flag generates data model diagrams for ALL types defined in the input Sysl file. The `project` flag specifies a subset of applications to generate diagrams for. Refer to the [Project Datamodel Diagram](#project-datamodel-diagram) example for more info.
 
 - `-j, --project=PROJECT` Generate diagrams only for applications specified in the specified project
 - `-d, --direct` Generate diagrams for all applications and types
@@ -51,6 +52,7 @@ Optional flags:
 - `-f, --filter=FILTER` Only generate diagrams whose names match a pattern
 
 [More common optional flags](common-flags)
+
 [Diagram format arguments](format-diagram)
 
 ## Arguments
