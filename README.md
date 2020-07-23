@@ -56,6 +56,8 @@ The homepage code of this website is in `src/pages/index.js` with configuration 
 
 * [Node.js](https://nodejs.org/en/download/)
 * [Yarn](https://classic.yarnpkg.com/en/docs/install#mac-stable)
+* [pyspell](https://facelessuser.github.io/pyspelling/) `pip3 install pyspell`
+* [aspell](http://aspell.net/) `brew install aspell`
 
 
 ### Local Development
@@ -80,4 +82,4 @@ A development version is deployed using Netlify. Deployment previews are enabled
 
 ### Linter
 
-[spellcheck](https://github.com/marketplace/actions/github-spellcheck-action) GitHub Action is used as the English spelling check linter. Add custom terms in `.wordlist.txt` to pass the spelling check.
+[spellcheck](https://github.com/marketplace/actions/github-spellcheck-action) GitHub Action is used as the English spelling check linter. Add custom terms in `.wordlist.txt` to pass the spelling check. To run the spellcheck locally, run `npm run spellcheck`
