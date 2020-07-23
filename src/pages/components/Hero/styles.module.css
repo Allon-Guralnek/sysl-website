@@ -64,15 +64,15 @@
 }
 .line__item__architects {
   border: 2px solid #d4ce8b;
-  transform: rotate(35deg) translate(10px, -50px);
+  transform: rotate(33deg) translate(10px, -55px);
 }
 .avatar__item__security {
   top: -145px;
   left: 240px;
 }
 .line__item__security {
-  border: 2px solid #5ac7e8;
-  transform: rotate(-65deg) translate(20px, -20px);
+  border: 2px solid #4bc7d7;
+  transform: rotate(-85deg) translate(7px, -4px);
 }
 .avatar__line_security {
   position: absolute;
@@ -85,7 +85,7 @@
   left: 450px;
 }
 .line__item__testers {
-  border: 2px solid #02c7d7;
+  border: 2px solid #5bc6e8;
   transform: rotate(-30deg) translate(-40px, -40px);
 }
 
@@ -94,8 +94,8 @@
   left: -20px;
 }
 .line__item__developers {
-  border: 2px solid #fdc82e;
-  transform: rotate(135deg) translate(-100px, 10px);
+  border: 2px solid #c6dfea;
+  transform: rotate(150deg) translate(-100px, 50px);
 }
 
 .avatar__item__analysts {
@@ -104,7 +104,7 @@
 }
 .line__item__analysts {
   border: 2px solid #eee8c4;
-  transform: rotate(90deg) translate(-100px, 10px);
+  transform: rotate(90deg) translate(-100px, 0px);
 }
 
 .avatar__item__dataengineers {
@@ -113,7 +113,7 @@
 }
 .line__item__dataengineers {
   border: 2px solid #aa9b8f;
-  transform: rotate(35deg) translate(-80px, -30px);
+  transform: rotate(35deg) translate(-80px, -45px);
 }
 .avatar__item__dataengineers {
   white-space: nowrap;
