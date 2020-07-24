@@ -21,3 +21,4 @@ yarn-error.log*
 
 # Spellcheck Files
 dictionary.dic
+package-lock.json
