@@ -4,7 +4,6 @@ title: Sequence Diagram
 sidebar_label: Sequence Diagram
 ---
 
-
 :::info
 We are currently in the process of migrating from PlantUML to Mermaid for our diagram generation. This will remove the external dependency on PlantUML and offer a better user experience. Diagram generation with mermaid is currently supported for integration diagrams and sequence diagrams only. For more details, check out [sysl diagram](cmd-diagram)
 :::
@@ -12,12 +11,12 @@ We are currently in the process of migrating from PlantUML to Mermaid for our di
 :::info
 This command requires the SYSL_PLANTUML environment variable to be set or passed in as a flag. Follow the instructions [here](plantuml.md) for more details
 :::
+
 ---
 
 `sysl sd` lets you generate a sequence diagram originating from a single endpoint.
 
 ![Sequence diagram](/img/sysl/seq-diagram-puml.png)
-
 
 ## Usage
 
@@ -61,12 +60,12 @@ Optional flags:
 Args:
 `<MODULE>` Input sysl file that contains the system specifications. e.g `simple.sysl`. The `.sysl` file type is optional.
 
-
 ## Examples
 
 ### Simple Sequence Diagram
 
 Command line
+
 ```bash
 sysl sd -s "GroceryStore <- POST /checkout" GroceryStore.sysl -o checkout.png
 ```
@@ -74,7 +73,7 @@ sysl sd -s "GroceryStore <- POST /checkout" GroceryStore.sysl -o checkout.png
 ```sysl title="Input Sysl file: GroceryStore.sysl"
 GroceryStore:
     /checkout:
-        POST?payment_info=string: 
+        POST?payment_info=string:
             Payment <- POST /validate
             Payment <- POST /pay
             | Checks out the specified cart
@@ -92,6 +91,5 @@ Payment:
             return ok <: string
 
 ```
-
 
 ![Sequence diagram](/img/sysl/seq-diagram-puml.png)

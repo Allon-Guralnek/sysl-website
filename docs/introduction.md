@@ -10,10 +10,10 @@ sidebar_label: Introduction
 
 Sysl supports an ecosystem of tools that generate all kinds of artifacts, including:
 
-* API documentation
-* Design diagrams: data, integration and sequence
-* SQL scripts: create and migrate databases
-* Boilerplate code: client/server REST/gRPC in Go
+- API documentation
+- Design diagrams: data, integration and sequence
+- SQL scripts: create and migrate databases
+- Boilerplate code: client/server REST/gRPC in Go
 
 Sysl saves time, allows you to focus on your core business logic, and guarantees that the design and implementation stay in sync.
 

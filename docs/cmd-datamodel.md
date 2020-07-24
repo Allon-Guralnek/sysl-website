@@ -4,17 +4,15 @@ title: Data Model Diagram
 sidebar_label: Data Model Diagram
 ---
 
-
 :::info
 We are currently in the process of migrating from PlantUML to Mermaid for our diagram generation. This will remove the external dependency on PlantUML and offer a better user experience. Diagram generation with Mermaid is currently supported for integration diagrams and sequence diagrams only. For more details, check out [sysl diagram](cmd-diagram).
 :::
 
-
 :::info
 This command requires the `SYSL_PLANTUML` environment variable to be set or passed in as a flag. Follow the instructions [here](plantuml.md) for more details.
 :::
----
 
+---
 
 `sysl datamodel generates data model diagrams for types defined in Sysl.
 
@@ -29,7 +27,6 @@ usage: sysl datamodel [<flags>] <MODULE>
 The output file format can be specified via the extension of the filename passed into the `-o` flag.
 
 Valid extensions include `.svg`, `.png`, `.uml`, `.puml`, `.plantuml`, `.html` or `.link`.
-
 
 ## Required Flags
 
@@ -78,7 +75,6 @@ Payment:
 ```
 
 ![Payment Datamodel diagram](/img/sysl/data-diagram-puml.svg)
-
 
 ### Compound Datamodel Diagram
 

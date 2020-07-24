@@ -4,7 +4,6 @@ title: Command Documentation
 sidebar_label: Command Documentation
 ---
 
-
 ```
 $ sysl help
 usage: sysl [<flags>] <command> [<args> ...]
@@ -78,21 +77,22 @@ Commands:
     Validate the sysl file
 ```
 
-
 ## Environment Variables
 
 Several commands require environment variables to be set before they are able to correctly work.
 
 - `SYSL_PLANTUML`
+
 ```
 export SYSL_PLANTUML=http://www.plantuml.com/plantuml
 ```
 
 - `SYSL_MODULES`
+
 ```
 export SYSL_MODULES=true
 ```
-Setting `SYSL_MODULES` to `true` means Sysl modules are enabled, `false` means disabled. By default, if this is not declared, Sysl modules are enabled.
 
+Setting `SYSL_MODULES` to `true` means Sysl modules are enabled, `false` means disabled. By default, if this is not declared, Sysl modules are enabled.
 
 For more details, refer to [Installation doc](installation.md)

@@ -50,17 +50,21 @@ Application names can contain any lowercase or uppercase letter, number, undersc
 Application names must begin with either a letter or an underscore.
 
 :::right Valid
+
 ```
   Mobile App:
     Login: ...
 ```
+
 :::
 
 :::wrong Invalid
+
 ```
   Mobile App*:
     Login: ...
 ```
+
 :::
 
 #### Long Names
@@ -82,6 +86,7 @@ Application names can also be namespaced using two colons. This allows the forma
 ```
 
 Namespaces can be nested arbitrarily deep.
+
 ```
   Payments :: CreditCard :: Validate "Credit Card Validator":
     Pay: ...
@@ -241,6 +246,7 @@ Different types of parameters can be defined for an endpoint
 Path parameters can be defined using curly brackets in the path name.
 
 In the example above
+
 ```
 AccountTransactionApi [package="io.sysl.account.api"]:
     /accounts [interface="Accounts"]:
@@ -276,6 +282,7 @@ Header and body parameters can be defined using brackets (foo <: int)
 To create a body parameter, we use the pattern ~body e.g `(bodyParam <: int [~body])`
 To create a header parameter, we use the pattern ~header e.g `(bodyParam <: int [~header])`
 Parameters are separated by commas
+
 ```
 Server:
     /first:
@@ -287,7 +294,6 @@ Server:
     !alias Tags:
         sequence of string
 ```
-
 
 ## Data-Types
 
@@ -360,7 +366,6 @@ NOTE: The syntax for enumerations will likely change from `name: value` to
 `name = value` in future. Limitations in the current parser prevent the second
 form from parsing.
 
-
 ### Return response
 
 An endpoint can return a response to the caller. Everything after `return` keyword till the end-of-line is considered response payload.
@@ -399,7 +404,6 @@ Server:
   !type LoginData
     userID <: string
 ```
-
 
 ### Attributes
 
@@ -647,7 +651,6 @@ Above code assumes, server and client files are in the same directory. If they a
 
 All sysl commands accept `--root` argument. Run `sysl -h` or `reljam -h` for more details.
 
-
 ### Internal relative file
 
 You have `server.sysl`, `client.sysl` and `deps/deps.sysl`. `server.sysl` and
@@ -748,6 +751,7 @@ When you import a sysl file, you can omit the `.sysl` file extension.
 To import a non-sysl file like swagger file, you can `import foreign_import_swagger.yaml as com.foo.bar.app ~swagger`.
 
 Valid types include
+
 - ~sysl
 - ~swagger
 - ~openapi3
@@ -795,7 +799,6 @@ can either be a string, int32, but not both.
 ## Wrap
 
 `!wrap` Add more here
-
 
 ## Data Models
 

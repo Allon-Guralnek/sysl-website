@@ -6,15 +6,17 @@ title: Code Generation
 :::caution
 WIP, copied from https://sysl.io/features/codegen/.
 
-Resources: 
-- https://github.com/anz-bank/sysl-go 
-- https://github.com/anz-bank/protoc-gen-sysl 
+Resources:
+
+- https://github.com/anz-bank/sysl-go
+- https://github.com/anz-bank/protoc-gen-sysl
 - https://github.com/anz-bank/sysl-template
 
 **TODO:**
-* Update and polish content.
-* Move referenced assets to a permanent directory on GitHub and update links.
-:::
+
+- Update and polish content.
+- Move referenced assets to a permanent directory on GitHub and update links.
+  :::
 
 ---
 

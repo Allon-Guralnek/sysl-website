@@ -50,7 +50,7 @@ info:
 paths:
   /test/:
     get:
-      description: Endpoint for testing GET     
+      description: Endpoint for testing GET
       responses:
         200:
           description: "200 OK"
@@ -124,15 +124,14 @@ info:
 paths:
   /test:
     get:
-      description: Endpoint for testing GET    
+      description: Endpoint for testing GET
       responses:
         200:
           description: 200 OK
           schema:
-            $ref: '#/definitions/SimpleObj'
+            $ref: "#/definitions/SimpleObj"
 definitions:
   SimpleObj:
-
     type: object
     properties:
       name:

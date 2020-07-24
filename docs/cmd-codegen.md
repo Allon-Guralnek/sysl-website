@@ -8,9 +8,10 @@ sidebar_label: Code Generation
 WIP, copied from https://sysl.io/docs/commands/codegen/.
 
 **TODO:**
-* Update and polish content.
-* Move referenced assets to a permanent directory on GitHub and update links.
-:::
+
+- Update and polish content.
+- Move referenced assets to a permanent directory on GitHub and update links.
+  :::
 
 ---
 

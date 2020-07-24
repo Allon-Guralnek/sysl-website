@@ -2,6 +2,7 @@
 id: format-diagram
 title: Format Arguments for Diagrams
 ---
+
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## Format Arguments
@@ -13,6 +14,7 @@ Command:
 ```bash
 sysl sd -o 'call-login-sequence.png' --epfmt '%(epname) %(args)' -s 'MobileApp <- Login' /assets/call.sysl -v call-login-sequence.png
 ```
+
 See <a href={useBaseUrl('img/sysl/args.sysl')} >args.sysl</a> for complete example.
 
 <img alt="Sequence Diagram" src={useBaseUrl('img/sysl/args-Seq.png')} />
@@ -23,19 +25,18 @@ A bit more explanation is required regarding `epname` and `args` keywords that a
 
 `appfmt` and `epfmt` (app and endpoint format respectively) can be passed to the
 `sysl sequence` and `sysl integrations` commands. They control how the application or endpoint name is
-rendered as text. 
+rendered as text.
 
 There default value is `%(appname)` and `%(epname)` respectively.
 
 These internal attributes are:
 
-| Attribute                 | Description                                         |
-|---------------------------|-----------------------------------------------------|
-| appname                   | short name of the application                       |
-| epname                    | short name of the endpoint                          |
-| eplongname                | Long quoted name of the endpoint                    |
-| controls                  | controls defined on your endpoint                    |
-
+| Attribute  | Description                       |
+| ---------- | --------------------------------- |
+| appname    | short name of the application     |
+| epname     | short name of the endpoint        |
+| eplongname | Long quoted name of the endpoint  |
+| controls   | controls defined on your endpoint |
 
 ### Example
 
@@ -49,13 +50,12 @@ App "Descriptive Long Application name":
 
 Where:
 
-
-| Attribute                 | Value                                                                             |
-|---------------------------|-----------------------------------------------------------------------------------|
-| appname                   | App                                                                               |
-| epname                    | Endpoint-1 or Endpoint-2                                                          |
-| eplongname                | "Descriptive Long name for Endpoint 1" or "Descriptive Long name for Endpoint 2" |
-| controls                  | Controls defined on your endpoint                    |
+| Attribute  | Value                                                                            |
+| ---------- | -------------------------------------------------------------------------------- |
+| appname    | App                                                                              |
+| epname     | Endpoint-1 or Endpoint-2                                                         |
+| eplongname | "Descriptive Long name for Endpoint 1" or "Descriptive Long name for Endpoint 2" |
+| controls   | Controls defined on your endpoint                                                |
 
 You can also refer to the attributes that you added by using `[]` or the
 Collector syntax.
@@ -70,13 +70,12 @@ TODO: Add more details about the Collector syntax
 You can display custom attributes in `epfmt` or `appfmt` arguments in the following
 ways:
 
-| Attribute                                                   | Value                                                       |
-|-------------------------------------------------------------|-------------------------------------------------------------|
-| %(@attrib_name)                                             | use `@` to refer to attrib_name                             |
-| %(@attrib_name? yes_stmt \| no_stmt)                        | use the ternary operator `?` to test for existence of value |
-| %(@attrib_name=='some_value'? yes_stmt &#124; no_stmt)      | compare attrib's value to some constant                     |
-| %(@attrib_name=='a'? yes_stmt \|; @attrib_name=='b'? \| ...)| nested checks                                               |
-
+| Attribute                                                    | Value                                                       |
+| ------------------------------------------------------------ | ----------------------------------------------------------- |
+| %(@attrib_name)                                              | use `@` to refer to attrib_name                             |
+| %(@attrib_name? yes_stmt \| no_stmt)                         | use the ternary operator `?` to test for existence of value |
+| %(@attrib_name=='some_value'? yes_stmt &#124; no_stmt)       | compare attrib's value to some constant                     |
+| %(@attrib_name=='a'? yes_stmt \|; @attrib_name=='b'? \| ...) | nested checks                                               |
 
 The `stmt` can be any of the following types:
 

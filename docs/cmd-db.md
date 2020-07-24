@@ -8,12 +8,12 @@ sidebar_label: Database Script (beta)
 WIP, copied from https://sysl.io/docs/commands/dbscripts/.
 
 **TODO:**
-* Update and polish content.
-* Move referenced assets to a permanent directory on GitHub and update links.
-:::
+
+- Update and polish content.
+- Move referenced assets to a permanent directory on GitHub and update links.
+  :::
 
 ---
-
 
 The `sysl generate-db-scripts` command is used to generate database scripts.
 
