@@ -37,12 +37,12 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()} Sysl.`,
     },
     colorMode: {
-      // "light" | "dark"
       defaultMode: 'light',
-
-      // Hides the switch in the navbar
-      // Useful if you want to support a single color mode
       disableSwitch: false,
+    },
+    googleAnalytics: {
+      trackingID: 'UA-173443254-1', // GA account owner: sysl.usr@gmail.com
+      anonymizeIP: true,
     },
   },
   presets: [
@@ -85,7 +85,7 @@ module.exports = {
       },
     ],
   ],
-  plugins: [],
+  plugins: [require.resolve('@docusaurus/plugin-google-analytics')],
   scripts: [],
   stylesheets: [
     "https://fonts.googleapis.com/css?family=Lato:wght@400;900|Roboto|Source+Code+Pro",
