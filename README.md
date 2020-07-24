@@ -66,6 +66,14 @@ $ yarn build
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
+### Format
+
+This project uses [Prettier](https://prettier.io/) to format all files.
+
+```
+$ yarn format
+```
+
 ### Deployment
 
 A development version is deployed using Netlify. Deployment previews are enabled, so each PR has a unique deployment preview link which can be found in the Github Status Checks.
