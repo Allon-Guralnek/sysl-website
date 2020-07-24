@@ -11,7 +11,8 @@ WIP, copied from http://localhost:3000/docs/plugin.
 
 - Update and polish content.
 - Move referenced assets to a permanent directory on GitHub and update links.
-  :::
+
+:::
 
 ---
 

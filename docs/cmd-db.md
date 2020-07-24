@@ -11,7 +11,8 @@ WIP, copied from https://sysl.io/docs/commands/dbscripts/.
 
 - Update and polish content.
 - Move referenced assets to a permanent directory on GitHub and update links.
-  :::
+
+:::
 
 ---
 

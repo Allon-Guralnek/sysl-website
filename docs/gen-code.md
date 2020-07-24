@@ -16,7 +16,8 @@ Resources:
 
 - Update and polish content.
 - Move referenced assets to a permanent directory on GitHub and update links.
-  :::
+
+:::
 
 ---
 
