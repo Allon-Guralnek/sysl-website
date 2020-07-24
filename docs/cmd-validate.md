@@ -41,11 +41,13 @@ a good sysl file.
 The format of the warnings are as follows:
 
 1. When there is only one location:
+
 ```
 lint path/to/file:lineNumber:colNumber: linter message
 ```
 
 2. When there are multiple locations:
+
 ```
 lint: linter message:
 additional message:path/to/file1:lineNumber:colNumber

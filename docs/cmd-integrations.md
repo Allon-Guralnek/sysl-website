@@ -11,8 +11,8 @@ We are currently in the process of migrating from PlantUML to Mermaid for our di
 :::info
 This command requires the SYSL_PLANTUML environment variable to be set or passed in as a flag. Follow the instructions [here](plantuml.md) for more details
 :::
----
 
+---
 
 `sysl integrations` lets you generate integration diagrams. The command requires a project to be specified to produce an integration diagram. Refer to the examples for more details.
 
@@ -27,6 +27,7 @@ Aliases
 ```bash
 sysl ints [<flags>] <MODULE>
 ```
+
 ## Output Formats
 
 The output file format can be specified via the extension passed into the -o flag.
@@ -63,6 +64,7 @@ Args:
 ### Simple Integration Diagram
 
 Command line
+
 ```bash
 sysl integrations -o epa.png --project Project GroceryStore.sysl
 ```
@@ -70,7 +72,7 @@ sysl integrations -o epa.png --project Project GroceryStore.sysl
 ```sysl title="Input Sysl file: GroceryStore.sysl"
 GroceryStore:
     /checkout:
-        POST?payment_info=string: 
+        POST?payment_info=string:
             Payment <- POST /validate
             Payment <- POST /pay
             | Checks out the specified cart
@@ -98,6 +100,7 @@ Project [appfmt="%(appname)"]:
 ### Endpoint Analysis Diagram
 
 Command line
+
 ```bash
 sysl integrations -o epa.png --project Project --epa GroceryStore.sysl
 ```
@@ -105,7 +108,7 @@ sysl integrations -o epa.png --project Project --epa GroceryStore.sysl
 ```sysl title="Input Sysl file: GroceryStore.sysl"
 GroceryStore:
     /checkout:
-        POST?payment_info=string: 
+        POST?payment_info=string:
             Payment <- POST /validate
             Payment <- POST /pay
             | Checks out the specified cart
@@ -121,7 +124,7 @@ Payment:
         POST:
             | Processes a payment
             return ok <: string
-	
+
 Project [appfmt="%(appname)"]:
     _:
         GroceryStore

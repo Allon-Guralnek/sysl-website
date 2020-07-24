@@ -1,6 +1,5 @@
 ## Simple REST endpoint generation in go
 
-
 api/: contains all API specifications for the generated application
 
 gen/: contains all the generated code for the service
@@ -12,7 +11,6 @@ pkg/defaultcallback: contains code that sets up the defaults for generated code.
 When new endpoints are added, they need to be added to the `simple.ServiceInterface` variable in [server.go](./server/server.go)
 
 [main.go](./main.go): runs the actual server
-
 
 run `make` to regenerate application code
 First you need to edit the start of the Makefile:

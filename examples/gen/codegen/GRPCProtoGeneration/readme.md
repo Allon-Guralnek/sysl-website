@@ -4,8 +4,7 @@ Make sure to run install.sh in order to get the required git modules
 
 ### Sysl grpc examples
 
-
-GRPCProtoGeneration: 
+GRPCProtoGeneration:
 
 Makefile: has sysl command to build grpc sysl into protos
 

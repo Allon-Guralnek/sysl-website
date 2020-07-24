@@ -4,10 +4,10 @@ title: Mermaid Diagram (beta)
 sidebar_label: Mermaid Diagram (beta)
 ---
 
-
 :::info
-We are currently in the process of migrating from PlantUML to Mermaid for our diagram generation. This will remove the external dependency on PlantUML and offer a better user experience. Diagram generation with mermaid is currently supported for integration diagrams and sequence diagrams only. 
+We are currently in the process of migrating from PlantUML to Mermaid for our diagram generation. This will remove the external dependency on PlantUML and offer a better user experience. Diagram generation with mermaid is currently supported for integration diagrams and sequence diagrams only.
 :::
+
 ---
 
 ## Summary
@@ -26,13 +26,13 @@ Currently SVG is the only supported output format.
 
 ## Optional Flags
 
-- `-i, --integrationdiagram=INTEGRATIONDIAGRAM`  Generate an integration diagram (Specify the application name)
-- `-s, --sequencediagram=SEQUENCEDIAGRAM`  Generate a sequence diagram (Specify 'appname->endpoint')
-- `-e, --endpointanalysis`  Generate an integration diagram with its endpoints (Specify 'true')
-- `-d, --datadiagram`       Generate a Data model diagram (Specify 'true')
-- `-a, --app=APP`               Optional flag to specify specific application
-- `-e, --endpoint=ENDPOINT`     Optional flag to specify endpoint
-- `-o, --output="diagram.svg"`  Output file (Default: diagram.svg)
+- `-i, --integrationdiagram=INTEGRATIONDIAGRAM` Generate an integration diagram (Specify the application name)
+- `-s, --sequencediagram=SEQUENCEDIAGRAM` Generate a sequence diagram (Specify 'appname->endpoint')
+- `-e, --endpointanalysis` Generate an integration diagram with its endpoints (Specify 'true')
+- `-d, --datadiagram` Generate a Data model diagram (Specify 'true')
+- `-a, --app=APP` Optional flag to specify specific application
+- `-e, --endpoint=ENDPOINT` Optional flag to specify endpoint
+- `-o, --output="diagram.svg"` Output file (Default: diagram.svg)
 
 [More common optional flags](common-flags)
 
@@ -45,7 +45,7 @@ sysl diagram -s grocerystore.sysl --app GroceryStore --endpoint "POST /checkout"
 ```sysl title="Input Sysl file: GroceryStore.sysl"
 GroceryStore:
     /checkout:
-        POST?payment_info=string: 
+        POST?payment_info=string:
             Payment <- POST /validate
             Payment <- POST /pay
             | Checks out the specified cart
@@ -71,7 +71,7 @@ Payment:
 ```sysl title="Input Sysl file: GroceryStore.sysl"
 GroceryStore:
     /checkout:
-        POST?payment_info=string: 
+        POST?payment_info=string:
             Payment <- POST /validate
             Payment <- POST /pay
             | Checks out the specified cart

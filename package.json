@@ -8,7 +8,8 @@
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "spellcheck": "pyspelling -c .spellcheck.yml",
-    "sort": "sort -f -o .wordlist.txt .wordlist.txt"
+    "sort": "sort -f -o .wordlist.txt .wordlist.txt",
+    "format": "yarn prettier --write ."
   },
   "dependencies": {
     "@docusaurus/core": "^2.0.0-alpha.56",
@@ -29,5 +30,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "prettier": "2.0.5"
   }
 }

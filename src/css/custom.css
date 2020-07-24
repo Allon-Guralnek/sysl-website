@@ -7,9 +7,9 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #007DBA;
+  --ifm-color-primary: #007dba;
   --ifm-color-primary-dark: #004165;
-  --ifm-color-primary-darker: #394A58;
+  --ifm-color-primary-darker: #394a58;
   --ifm-color-primary-darkest: #253d50;
   --ifm-color-primary-light: rgb(70, 203, 174);
   --ifm-color-primary-lighter: rgb(102, 212, 189);
@@ -25,8 +25,8 @@
 }
 
 .navbar__title {
-  color: #007DBA;
-  font-family: Lato,Arial,sans-serif;
+  color: #007dba;
+  font-family: Lato, Arial, sans-serif;
   font-size: 2em;
 }
 
@@ -35,13 +35,14 @@
 }
 
 html {
-  --ifm-color--text--desc: #4A4A4A;
-  --ifm-color--text--primary: #007DBA;
+  --ifm-color--text--desc: #4a4a4a;
+  --ifm-color--text--primary: #007dba;
   --feature-svg--filter: none;
 }
 
-html[data-theme='dark'] {
-  --ifm-color--text--desc: #FFFFFF;
-  --ifm-color--text--primary: #FFFFFF;
-  --feature-svg--filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(346deg) brightness(104%) contrast(97%);
+html[data-theme="dark"] {
+  --ifm-color--text--desc: #ffffff;
+  --ifm-color--text--primary: #ffffff;
+  --feature-svg--filter: invert(100%) sepia(100%) saturate(100%)
+    hue-rotate(346deg) brightness(104%) contrast(97%);
 }

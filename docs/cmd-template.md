@@ -8,12 +8,13 @@ sidebar_label: Template (beta)
 WIP, copied from https://sysl.io/docs/commands/template/.
 
 **TODO:**
-* Update and polish content.
-* Move referenced assets to a permanent directory on GitHub and update links.
+
+- Update and polish content.
+- Move referenced assets to a permanent directory on GitHub and update links.
+
 :::
 
 ---
-
 
 The `sysl template` command is used to apply a model to a template for custom text output
 

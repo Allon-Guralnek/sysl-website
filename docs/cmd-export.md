@@ -79,7 +79,7 @@ components:
     SimpleObj2:
       properties:
         name:
-          $ref: '#/components/schemas/SimpleObj'
+          $ref: "#/components/schemas/SimpleObj"
       type: object
 info:
   contact: {}
@@ -98,7 +98,7 @@ paths:
             application/json: {}
           description: "200"
 servers:
-- url: ""
+  - url: ""
 ```
 
 ### Swagger
@@ -121,12 +121,12 @@ SimpleSwagger "SimpleSwagger":
 
         DELETE:
             | Endpoint for testing DELETE
-            return 203        
+            return 203
 
     /tests:
         GET:
             | Endpoint for testing GET
-            return set of SimpleObj        
+            return set of SimpleObj
 
     #---------------------------------------------------------------------------
     # definitions
@@ -154,38 +154,38 @@ paths:
   /test:
     delete:
       consumes:
-      - application/json
+        - application/json
       description: Endpoint for testing DELETE
       produces:
-      - application/json
+        - application/json
       responses:
         "203":
           description: Non-Authoritative Information
       summary: Endpoint for testing DELETE
     get:
       consumes:
-      - application/json
+        - application/json
       description: Endpoint for testing GET
       produces:
-      - application/json
+        - application/json
       responses:
         "200":
           description: OK
           schema:
-            $ref: '#/definitions/SimpleObj'
+            $ref: "#/definitions/SimpleObj"
       summary: Endpoint for testing GET
   /tests:
     get:
       consumes:
-      - application/json
+        - application/json
       description: Endpoint for testing GET
       produces:
-      - application/json
+        - application/json
       responses:
         "200":
           description: OK
           schema:
-            $ref: '#/definitions/SimpleObj'
+            $ref: "#/definitions/SimpleObj"
       summary: Endpoint for testing GET
 swagger: "2.0"
 ```

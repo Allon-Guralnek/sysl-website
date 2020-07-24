@@ -8,12 +8,10 @@ paths:
         200:
           description: 200 OK
           schema:
-            $ref: '#/definitions/SimpleObj'
+            $ref: "#/definitions/SimpleObj"
 definitions:
   SimpleObj:
-
     type: object
     properties:
       name:
         type: string
-

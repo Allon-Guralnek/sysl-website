@@ -7,20 +7,18 @@ title: Installation
 
 ## Summary
 
-* Mac: `$ brew install anz-bank/homebrew-sysl/sysl`
-* Docker: `$ docker run --rm -it -v $HOME:$HOME -w $(pwd) anzbank/sysl:latest`
-* Go: `$ GO111MODULE=on go get -u github.com/anz-bank/sysl/cmd/sysl`
-* Source: `$ git clone https://github.com/anz-bank/sysl.git`, then `$ make install`
-* Binary: download from the [GitHub releases page](https://github.com/anz-bank/sysl/releases) to your `PATH`
+- Mac: `$ brew install anz-bank/homebrew-sysl/sysl`
+- Docker: `$ docker run --rm -it -v $HOME:$HOME -w $(pwd) anzbank/sysl:latest`
+- Go: `$ GO111MODULE=on go get -u github.com/anz-bank/sysl/cmd/sysl`
+- Source: `$ git clone https://github.com/anz-bank/sysl.git`, then `$ make install`
+- Binary: download from the [GitHub releases page](https://github.com/anz-bank/sysl/releases) to your `PATH`
 
 Check the installation with `sysl help`.
-
 
 ## Requirements
 
 - [Golang](https://golang.org/doc/install) version >= 1.13 (check with `go version`).
 - [goimports](https://godoc.org/golang.org/x/tools/cmd/goimports).
-
 
 ## [(Mac) Homebrew](https://github.com/anz-bank/homebrew-sysl)
 
@@ -31,7 +29,6 @@ brew tap anz-bank/homebrew-sysl
 brew install anz-bank/homebrew-sysl/sysl
 ```
 
-
 ## Pre-compiled binary
 
 1. Download the pre-compiled binaries matching your OS from the [releases page](https://github.com/anz-bank/sysl/releases).
@@ -40,7 +37,6 @@ brew install anz-bank/homebrew-sysl/sysl
 
    1. On your `PATH` to run it with `sysl`
    1. Elsewhere to run it with `./sysl`, or some other `path/to/sysl`
-
 
 ## Go get it
 
@@ -59,7 +55,6 @@ $ GO111MODULE=on go get -u github.com/anz-bank/sysl/cmd/sysl
 :::caution
 Do NOT run this from inside a Go source directory that is module enabled, otherwise it gets added to go.mod/go.sum.
 :::
-
 
 ## Docker
 
@@ -86,7 +81,6 @@ $ alias sysl="docker run --rm -it -v $HOME:$HOME -w $(pwd) anzbank/sysl:latest"
 
 `sysl` can then be used from the same terminal window. Alternatively, add the `alias` to your `.bashrc` or `.zshrc` file to keep it permanently.
 
-
 ## Compile from source
 
 Here you have two options:
@@ -106,7 +100,7 @@ $ make install
 If the installation worked, you should be able to run:
 
 ```bash
-$ sysl 
+$ sysl
 usage: sysl [<flags>] <command> [<args> ...]
 ...
 ```

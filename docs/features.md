@@ -8,7 +8,7 @@ As a language, Sysl is focused on capturing information about software systems. 
 
 This section describes many of the features of those tools in detail:
 
-* **[Diagram generation](gen-diagram.md)** illustrates the contents of Sysl specifications using a variety of standard UML diagrams.
+- **[Diagram generation](gen-diagram.md)** illustrates the contents of Sysl specifications using a variety of standard UML diagrams.
 
 <!-- TODO: * **[Documentation generation](gen-docs.md)** describes how your applications work, and how others can interact with them. -->
 

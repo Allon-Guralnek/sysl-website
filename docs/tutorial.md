@@ -5,7 +5,6 @@ sidebar_label: Tutorial
 ---
 
 In this tutorial, we're going to create a simple Sysl specification (i.e. a `.sysl` file), and use the `sysl` command line tool to generate a variety of outputs. We will touch briefly of many of features of Sysl, and link to in-depth guides where you can learn more.
- 
 
 ## Hello World
 
@@ -94,7 +93,7 @@ $ sysl validate hello.sysl
 
 Let's introduce another application so that we can model some communication. The user is going to receive their greeting via a mobile app called `Hello App` (yes, spaces are okay), which will fetch the greeting to display from `HelloService`.
 
-As mentioned above, Sysl generally models components as "applications with endpoints". A natural interpretation for user-facing applications is that the *app* is an application, and *each screen* (or *task*) within the app is an endpoint.
+As mentioned above, Sysl generally models components as "applications with endpoints". A natural interpretation for user-facing applications is that the _app_ is an application, and _each screen_ (or _task_) within the app is an endpoint.
 
 You can probably guess what happens next:
 
@@ -119,7 +118,7 @@ At this level of detail, we're not interested in specifically what happens to th
 
 Now that our system has some communication happening, we can generate some useful output. **Diagrams** are the most common representation of Sysl specifications, since they are visual, rich, standard, and easily shared.
 
-Let's create a **sequence diagram** illustrating the communication. Sequence diagram generation requires an interaction (i.e. an endpoint invocation) to draw, so we'll use `Hello App <- Greet` 
+Let's create a **sequence diagram** illustrating the communication. Sequence diagram generation requires an interaction (i.e. an endpoint invocation) to draw, so we'll use `Hello App <- Greet`
 
 ```bash
 sysl sd --endpoint="Hello App <- Greet" hello.sysl
@@ -132,7 +131,6 @@ This produces the diagram below:
 This shows `Hello App` sending a `GET /greeting/{userId}` request to `HelloService`. Great!
 
 However it's a bit clunky to have to spell out the full endpoint name for every diagram that we want to generate. Sure, you could write a script with multiple calls, but that would grow stale as the spec evolves. To keep it all in the Sysl universe, we have the concept of a **project**.
-
 
 ## Projects
 

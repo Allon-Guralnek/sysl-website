@@ -28,8 +28,6 @@ or set it before you run the command with
 SYSL_PLANTUML=PLANTUML_SERVER_ADDRESS sysl sd ...
 ```
 
-
-
 You can choose to use the public PlantUML service or run your own locally.
 
 ## Local PlantUML Service
