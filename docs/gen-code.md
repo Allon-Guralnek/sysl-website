@@ -38,7 +38,7 @@ For details on the command, refer to [code-generation](/docs/cmd-codegen)
 Add [sysl-go](https://github.com/anz-bank/sysl-go) to the dependency as the communication library used by SYSL-generated code as well as the available transforms.
 
 ## RESTful server
-Sysl can generate a RESTful service based on the sysl file. It requires the transform sysl file to generate service, router, interface and hander etc. Only requires custom code to implement the service interface to construct the full functional API server. The generated code will take care of the loging, middleware and error handling etc. The custom code only need to care about the business logic. 
+Sysl can generate a RESTful service based on the sysl file. It requires the transform sysl file to generate service, router, interface and handler etc. Only requires custom code to implement the service interface to construct the full functional API server. The generated code will take care of the logging, middleware and error handling etc. The custom code only need to care about the business logic. 
 
 ### How to
 With an input sysl file, user can use the following command to generate the service
@@ -46,7 +46,7 @@ With an input sysl file, user can use the following command to generate the serv
 sysl codegen --root-transform github.com/anz-bank/sysl-go/codegen@v0.52.0 --transform [transformSyslFile] --grammar [grammarFile] --start goFile --outdir [outputDirectory] --app-name [ApplicationName] --basepath [basePath] [inputSyslFile]
 ```
 Just replace the arguments in `[]` to generate different files
-For restful service, the available tranformations are:
+For restful service, the available transformations are:
 - `svc_app.sysl`
 - `svc_types.sysl`
 - `svc_interface.sysl`
@@ -59,7 +59,7 @@ For detailed input file, refer to [simple.sysl](https://github.com/anz-bank/sysl
 
 ## gRPC server
 
-gRPC services is also supported. In addtion to the RESTful services, sysl also got the grpc transforms to generate the gRPC services.
+gRPC services is also supported. In addition to the RESTful services, sysl also got the grpc transforms to generate the gRPC services.
 
 The available gRPC transforms are:
 - `svc_grpc.sysl`
