@@ -40,9 +40,9 @@ function Deliver() {
               </div>
               <div className={styles.deliver__button__group__right}>
                 <Link to={useBaseUrl('docs/gen-diagram')} className={classnames('button button--primary button--lg', styles.button__round)}>Diagram</Link>
-                <Link to={useBaseUrl('docs/gen-code')} className={classnames('button button--primary button--lg', styles.button__round)}>Code</Link>
-                <Link to={useBaseUrl('docs/gen-docs')} className={classnames('button button--primary button--lg', styles.button__round)}>Documentation</Link>
-                <Link to={useBaseUrl('docs/gen-test')} className={classnames('button button--primary button--lg', styles.button__round)}>Tests</Link>
+                <Link className={classnames('button button--primary button--lg', styles.button__round)}>Code</Link>
+                <Link className={classnames('button button--primary button--lg', styles.button__round)}>Documentation</Link>
+                <Link className={classnames('button button--primary button--lg', styles.button__round)}>Tests</Link>
               </div>
             </div>
           </div>

@@ -20,7 +20,7 @@ module.exports = {
         { to: 'docs/discussions', label: 'Community', position: 'right' },
         { to: 'blog', label: 'Blog', position: 'right' },
         {
-          href: 'https://cocky-raman-ef0bf4.netlify.app/', // TODO
+          href: 'https://play.sysl.io/',
           label: 'Play',
           position: 'right',
         },
@@ -53,7 +53,7 @@ module.exports = {
           // It is recommended to set document id as docs home page (`docs/` path).
           homePageId: 'introduction',
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/anz-bank/sysl-website/edit/master/docs/',
+          editUrl: 'https://github.com/anz-bank/sysl-website/edit/master/',
           admonitions: {
             infima: true,
             customTypes: {
@@ -77,7 +77,7 @@ module.exports = {
         blog: {
           showReadingTime: true,
           editUrl:
-            'https://github.com/anz-bank/sysl-website/edit/master/blog/',
+            'https://github.com/anz-bank/sysl-website/edit/master/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

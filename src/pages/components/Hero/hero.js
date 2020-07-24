@@ -19,12 +19,12 @@ function Hero() {
               <div className="col col--12">
                 <Link
                   className={classnames('button button--outline button--lg', styles.button__developer)}
-                  to={useBaseUrl('docs/examples-dev')}>
+                  to={useBaseUrl('docs/tutorial')}>
                   I'm a developer
                 </Link>
                 <Link
                   className={classnames('button button--outline button--lg', styles.button__non_developer)}
-                  to={useBaseUrl('docs/examples-nondev')}>
+                  to={useBaseUrl('docs/tutorial')}>
                   I'm not a developer
                   </Link>
               </div>

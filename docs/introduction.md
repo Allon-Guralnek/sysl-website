@@ -6,7 +6,7 @@ sidebar_label: Introduction
 
 ## What is Sysl?
 
-Sysl is a system specification language designed for modelling distributed web applications. A Sysl specification captures the design of your project—or your entire organisation—and becomes a single source of truth.
+[Sysl](https://github.com/anz-bank/sysl) is an open-sourced system specification language designed for modelling distributed web applications. A Sysl specification captures the design of your project—or your entire organisation—and becomes a single source of truth.
 
 Sysl supports an ecosystem of tools that generate all kinds of artifacts, including:
 

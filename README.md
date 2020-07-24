@@ -2,8 +2,6 @@
 
 Sysl website https://sysl.io is built using [Docusaurus 2](https://v2.docusaurus.io/).
 
-See our development site here: [Sysl Website](https://vibrant-neumann-307d85.netlify.app/)
-
 ## Contributing
 
 ### Project structure
