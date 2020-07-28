@@ -16,6 +16,10 @@ function Deliver() {
         >
           What Sysl Delivers
         </h1>
+        <p className={styles.deliver__desc}>
+          Generate design diagrams in seconds. Create new services in minutes.<br />
+          Take those specifications and get all of Sysl's other benefits for free.
+        </p>
       </div>
       <div className={styles.deliver__section}>
         <div className={styles.deliver__body}>

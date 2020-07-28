@@ -9,6 +9,11 @@
   background: rgba(198, 223, 234, 0.3);
   padding: 2rem;
 }
+.deliver__desc {
+  color: var(--ifm-color--text--primary);
+  text-align: center;
+  font-size: 1.25rem;
+}
 .deliver__body {
   display: flex;
   justify-content: center;
