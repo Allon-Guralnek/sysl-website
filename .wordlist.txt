@@ -98,6 +98,7 @@ HelloProject
 HelloService
 HelloWorld
 homebrew
+href
 html
 http
 https
@@ -204,6 +205,7 @@ uml
 Uncompress
 url
 URL's
+urlencoder
 useBaseUrl
 userID
 userId

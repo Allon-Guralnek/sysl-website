@@ -8,8 +8,6 @@ input = simple.sysl
 app = simple
 down =  # this can be a list separated by a space or left empty
 out = gen
-# Current go import path, this should be what's in your go.mod plus the path you're in
-basepath = github.service.anz/sysl/syslbyexample/_examples/Code-Generation
 
 make input=simple.sysl app=simple
 
