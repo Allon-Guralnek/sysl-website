@@ -5,7 +5,7 @@ sidebar_label: Code Generation
 ---
 
 :::caution
-WIP, copied from https://sysl.io/docs/commands/codegen/.
+WIP
 
 **TODO:**
 

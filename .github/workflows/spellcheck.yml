@@ -3,7 +3,7 @@ name: Spellcheck
 on: push
 
 jobs:
-  build:
+  spell_check:
     name: Spellcheck
     runs-on: ubuntu-latest
     steps:

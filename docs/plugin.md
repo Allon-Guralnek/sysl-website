@@ -5,7 +5,7 @@ sidebar_label: Plugin
 ---
 
 :::caution
-WIP, copied from http://localhost:3000/docs/plugin.
+WIP
 
 **TODO:**
 

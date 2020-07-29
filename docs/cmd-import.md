@@ -30,7 +30,7 @@ Currently, the supported formats include:
 - `-p, --package=PACKAGE` Name of the sysl package to define in sysl model.
 - `-o, --output="output.sysl"` Output filename.
 
-[More common optional flags](common-flags)
+[More common optional flags](common-flags.md)
 
 ## Examples
 

@@ -19,7 +19,7 @@ sysl protobuf --mode=[textpb, json, pb] --output=<output file name> [<flags>]
 - `--mode` Output file format which can be `textpb` (the [prototext format](https://pkg.go.dev/google.golang.org/protobuf/encoding/prototext?tab=doc)), `json` (JSON with some embedding of types) or `pb` (binary proto encoding).
 - `-o, --output` Output filename. If not provided, the protobuf output will be printed to `stdout`.
 
-[More common optional flags](common-flags)
+[More common optional flags](common-flags.md)
 
 ## Arguments
 

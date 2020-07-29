@@ -4,8 +4,10 @@ title: Sequence Diagram
 sidebar_label: Sequence Diagram
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 :::info
-We are currently in the process of migrating from PlantUML to Mermaid for our diagram generation. This will remove the external dependency on PlantUML and offer a better user experience. Diagram generation with mermaid is currently supported for integration diagrams and sequence diagrams only. For more details, check out [sysl diagram](cmd-diagram)
+We are currently in the process of migrating from PlantUML to Mermaid for our diagram generation. This will remove the external dependency on PlantUML and offer a better user experience. Diagram generation with mermaid is currently supported for integration diagrams and sequence diagrams only. For more details, check out [sysl diagram](cmd-diagram.md)
 :::
 
 :::info
@@ -16,7 +18,7 @@ This command requires the SYSL_PLANTUML environment variable to be set or passed
 
 `sysl sd` lets you generate a sequence diagram originating from a single endpoint.
 
-![Sequence diagram](/img/sysl/seq-diagram-puml.png)
+<img alt="Sequence diagram" src={useBaseUrl('img/sysl/seq-diagram-puml.png')}/>
 
 ## Usage
 
@@ -44,7 +46,7 @@ Optional flags:
 - `--app_format="%(appname)"`Specify the format string for sequence diagram participants. May include %%(appname)
   and %%(@foo) for attribute foo (default: %(appname))
 - `-t, --title=TITLE`diagram title
-- `-p, --plantuml=PLANTUML`base url of PlantUML server (default: SYSL_PLANTUML or http://localhost:8080/plantuml
+- `-p, --plantuml=PLANTUML`base url of PlantUML server (default: `SYSL_PLANTUML` or `http://localhost:8080/plantuml`
   see http://plantuml.com/server.html#install for more info)
 - `-o, --output="%(epname).png"`output file (default: %(epname).png)
 - `-b, --blackbox=BLACKBOX ...`Input blackboxes in the format App <- Endpoint=Some description, repeat '-b App <-
@@ -52,8 +54,8 @@ Optional flags:
 - `-g, --groupby=GROUPBY`Enter the groupby attribute (apps having the same attribute value are grouped
   together in one box
 
-[More common optional flags](common-flags)
-[Diagram format arguments](format-diagram)
+[More common optional flags](common-flags.md)
+[Diagram format arguments](format-diagram.md)
 
 ## Arguments
 
@@ -92,4 +94,4 @@ Payment:
 
 ```
 
-![Sequence diagram](/img/sysl/seq-diagram-puml.png)
+<img alt="Sequence diagram" src={useBaseUrl('img/sysl/seq-diagram-puml.png')}/>

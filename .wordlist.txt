@@ -60,6 +60,7 @@ dep
 deps
 dev
 DevOps
+diagramgen
 dir
 Dockerfile
 Docusaurus
@@ -134,6 +135,7 @@ Netlify
 nondev
 npm
 ok
+omni
 OpenAPI
 openapi
 OrderData

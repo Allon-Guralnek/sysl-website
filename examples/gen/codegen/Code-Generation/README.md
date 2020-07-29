@@ -8,7 +8,8 @@ gen/: contains all the generated code for the service
 
 pkg/defaultcallback: contains code that sets up the defaults for generated code. (This will no longer be necessary in future Sysl versions)
 
-When new endpoints are added, they need to be added to the `simple.ServiceInterface` variable in [server.go](./server/server.go)
+<!-- TODO: fix the link  -->
+<!-- When new endpoints are added, they need to be added to the `simple.ServiceInterface` variable in [server.go](./server/server.go) -->
 
 [main.go](./main.go): runs the actual server
 

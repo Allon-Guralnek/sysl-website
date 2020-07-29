@@ -5,7 +5,7 @@ sidebar_label: Template (beta)
 ---
 
 :::caution
-WIP, copied from https://sysl.io/docs/commands/template/.
+WIP
 
 **TODO:**
 

@@ -4,6 +4,8 @@ title: Mermaid Diagram (beta)
 sidebar_label: Mermaid Diagram (beta)
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 :::info
 We are currently in the process of migrating from PlantUML to Mermaid for our diagram generation. This will remove the external dependency on PlantUML and offer a better user experience. Diagram generation with mermaid is currently supported for integration diagrams and sequence diagrams only.
 :::
@@ -34,7 +36,7 @@ Currently SVG is the only supported output format.
 - `-e, --endpoint=ENDPOINT` Optional flag to specify endpoint
 - `-o, --output="diagram.svg"` Output file (Default: diagram.svg)
 
-[More common optional flags](common-flags)
+[More common optional flags](common-flags.md)
 
 ## Sequence Diagram
 
@@ -64,7 +66,7 @@ Payment:
 
 ```
 
-![Sequence diagram](/img/sysl/seq-diagram-mermaid.svg)
+<img alt="Sequence Diagram" src={useBaseUrl('img/sysl/seq-diagram-mermaid.svg')} />
 
 ## Integration Diagram
 
@@ -94,7 +96,8 @@ Payment:
 sysl diagram -i grocerystore.sysl --app GroceryStore
 ```
 
-![Integration diagram](/img/sysl/int-diagram-mermaid.svg)
+<img alt="Integration Diagram" src={useBaseUrl('img/sysl/int-diagram-mermaid.svg')} />
+
 
 ## Data Model Diagram
 
@@ -118,4 +121,4 @@ PaymentService:
 sysl diagram -d Payment.sysl
 ```
 
-![Integration diagram](/img/sysl/data-diagram-mermaid.svg)
+<img alt="Data Model Diagram" src={useBaseUrl('img/sysl/data-diagram-mermaid.svg')} />

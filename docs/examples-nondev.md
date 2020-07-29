@@ -6,7 +6,7 @@ sidebar_label: Non-Developer Use Cases
 
 Doc Reference:
 
-- [diagram generation](./examples/gen/diagramgen)
+<!-- - [diagram generation](./examples/gen/diagramgen) -->
 
 ## As an Architect
 

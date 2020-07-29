@@ -6,7 +6,7 @@ sidebar_label: Resources
 
 ## Blog
 
-See the [blog](/blog).
+See the [blog](../blog).
 
 ## Playground
 

@@ -4,6 +4,8 @@ title: Tutorial
 sidebar_label: Tutorial
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 In this tutorial, we're going to create a simple Sysl specification (i.e. a `.sysl` file), and use the `sysl` command line tool to generate a variety of outputs. We will touch briefly of many of features of Sysl, and link to in-depth guides where you can learn more.
 
 ## Hello World
@@ -12,7 +14,7 @@ Sysl specifications appear similar to [YAML](https://en.wikipedia.org/wiki/YAML)
 
 Let's start with a simple example: modelling a greeting system that will authenticate the user to get their name, and then display a personalised greeting. By the end we'll be generating diagrams like this:
 
-![Sequence diagram of the Greeting scenario](/img/tutorial/4_hello_project_sd.png)
+<img alt="Sequence diagram of the Greeting scenario" src={useBaseUrl('img/tutorial/4_hello_project_sd.png')}/>
 
 ## Applications
 
@@ -126,7 +128,7 @@ sysl sd --endpoint="Hello App <- Greet" hello.sysl
 
 This produces the diagram below:
 
-![Sequence diagram of the Greet endpoint](/img/tutorial/3_hello_communication_sd.png)
+<img alt="Sequence diagram of the Greet endpoint" src={useBaseUrl('img/tutorial/3_hello_communication_sd.png')}/>
 
 This shows `Hello App` sending a `GET /greeting/{userId}` request to `HelloService`. Great!
 
@@ -169,19 +171,19 @@ Let's take a look:
 sysl sd --app HelloProject hello.sysl
 ```
 
-![Sequence diagram of the Greeting scenario](/img/tutorial/4_hello_project_sd.png)
+<img alt="Sequence diagram of the Greeting scenario" src={useBaseUrl('img/tutorial/4_hello_project_sd.png')}/>
 
 ```bash
 sysl ints --project HelloProject hello.sysl
 ```
 
-![Integration diagram of the Greeting scenario](/img/tutorial/4_hello_project_ints.png)
+<img alt="Integration diagram of the Greeting scenario" src={useBaseUrl('img/tutorial/4_hello_project_ints.png')}/>
 
 ```bash
 sysl ints --epa --project HelloProject hello.sysl
 ```
 
-![Endpoint analysis diagram of the Greeting scenario](/img/tutorial/4_hello_project_epa.png)
+<img alt="Endpoint analysis diagram of the Greeting scenario" src={useBaseUrl('img/tutorial/4_hello_project_epa.png')}/>
 
 Now we're getting somewhere! These diagrams are pretty basic, but they will grow with the Sysl model. You can also customise them with additional model attributes and command line flags. See [Diagram Generation](gen-diagram.md) for more details.
 

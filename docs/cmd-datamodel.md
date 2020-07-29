@@ -4,8 +4,10 @@ title: Data Model Diagram
 sidebar_label: Data Model Diagram
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 :::info
-We are currently in the process of migrating from PlantUML to Mermaid for our diagram generation. This will remove the external dependency on PlantUML and offer a better user experience. Diagram generation with Mermaid is currently supported for integration diagrams and sequence diagrams only. For more details, check out [sysl diagram](cmd-diagram).
+We are currently in the process of migrating from PlantUML to Mermaid for our diagram generation. This will remove the external dependency on PlantUML and offer a better user experience. Diagram generation with Mermaid is currently supported for integration diagrams and sequence diagrams only. For more details, check out [sysl diagram](cmd-diagram.md).
 :::
 
 :::info
@@ -44,13 +46,13 @@ Optional flags:
 - `--class_format="%(classname)"`
 - ` Specify the format string for data diagram participants. May include %%(appname) and %%(@foo) for attribute foo (default: %(classname))
 - `-t, --title=TITLE` Diagram title
-- `-p, --plantuml=PLANTUML` base url of PlantUML server (default: SYSL_PLANTUML or http://localhost:8080/plantuml see http://plantuml.com/server.html#install for more info)
+- `-p, --plantuml=PLANTUML` base url of PlantUML server (default: `SYSL_PLANTUML` or `http://localhost:8080/plantuml` see http://plantuml.com/server.html#install for more info)
 - `-o, --output="%(epname).png"` Output file (default: %(epname).png)
 - `-f, --filter=FILTER` Only generate diagrams whose names match a pattern
 
-[More common optional flags](common-flags)
+[More common optional flags](common-flags.md)
 
-[Diagram format arguments](format-diagram)
+[Diagram format arguments](format-diagram.md)
 
 ## Arguments
 
@@ -73,8 +75,7 @@ Payment:
             @sensitive="true"
         type <: string
 ```
-
-![Payment Datamodel diagram](/img/sysl/data-diagram-puml.svg)
+<img alt="Payment Datamodel diagram" src={useBaseUrl('img/sysl/data-diagram-puml.svg')} />
 
 ### Compound Datamodel Diagram
 
@@ -93,7 +94,8 @@ Payment:
         Amount <: int
 ```
 
-![Payment Datamodel diagram](/img/sysl/data-diagram-compound-puml.svg)
+<img alt="Payment Datamodel diagram" src={useBaseUrl('img/sysl/data-diagram-compound-puml.svg')} />
+
 
 ### Project Datamodel Diagram
 
@@ -127,8 +129,10 @@ Project:
 
 This diagram only shows the types within the **Payment** application
 
-![Payment Datamodel diagram](/img/sysl/data-diagram-payment.svg)
+<img alt="Payment Datamodel diagram" src={useBaseUrl('img/sysl/data-diagram-payment.svg')} />
+
 
 This diagram only shows the types within the **PaymentService** application
 
-![Payment Info Datamodel diagram](/img/sysl/data-diagram-paymentinfo.svg)
+<img alt="Payment Info Datamodel diagram" src={useBaseUrl('img/sysl/data-diagram-paymentinfo.svg')} />
+

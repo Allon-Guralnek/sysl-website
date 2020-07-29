@@ -1,0 +1,12 @@
+# https://github.com/marketplace/actions/markdown-link-check
+name: Check Markdown links
+
+on: push
+
+jobs:
+  markdown-link-check:
+    name: Check for broken links
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - uses: gaurav-nelson/github-action-markdown-link-check@v1

@@ -4,8 +4,10 @@ title: Integration Diagram
 sidebar_label: Integration Diagram
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 :::info
-We are currently in the process of migrating from PlantUML to Mermaid for our diagram generation. This will remove the external dependency on PlantUML and offer a better user experience. Diagram generation with mermaid is currently supported for integration diagrams and sequence diagrams only. For more details, check out [sysl diagram](cmd-diagram)
+We are currently in the process of migrating from PlantUML to Mermaid for our diagram generation. This will remove the external dependency on PlantUML and offer a better user experience. Diagram generation with mermaid is currently supported for integration diagrams and sequence diagrams only. For more details, check out [sysl diagram](cmd-diagram.md)
 :::
 
 :::info
@@ -40,7 +42,7 @@ Valid formats include .svg, .png, .uml, .puml, .plantuml, .html or .link
 ## Optional Flags
 
 - `-t, --title=TITLE` diagram title
-- `-p, --plantuml=PLANTUML` base url of PlantUML server (default: SYSL_PLANTUML or http://localhost:8080/plantuml
+- `-p, --plantuml=PLANTUML` base url of PlantUML server (default: `SYSL_PLANTUML` or `http://localhost:8080/plantuml`
 - `` see http://plantuml.com/server.html#install for more info)
 - `-o, --output="%(epname).png"` output file(default: %(epname).png)
 
@@ -49,9 +51,9 @@ Valid formats include .svg, .png, .uml, .puml, .plantuml, .html or .link
 - `-c, --clustered` group integration components into clusters
 - `--epa` produce and EPA integration view
 
-[More common optional flags](common-flags)
+[More common optional flags](common-flags.md)
 
-[Diagram format syntax](format-diagram)
+[Diagram format syntax](format-diagram.md)
 
 ## Arguments
 
@@ -95,7 +97,8 @@ Project [appfmt="%(appname)"]:
         Payment
 ```
 
-![Integration diagram](/img/sysl/integration-diagram-puml.png)
+<img alt="Integration diagram" src={useBaseUrl('img/sysl/integration-diagram-puml.png')}/>
+
 
 ### Endpoint Analysis Diagram
 
@@ -131,4 +134,4 @@ Project [appfmt="%(appname)"]:
         Payment
 ```
 
-![EPA diagram](/img/sysl/epa-diagram-puml.png)
+<img alt="EPA diagram" src={useBaseUrl('img/sysl/epa-diagram-puml.png')}/>

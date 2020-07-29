@@ -5,7 +5,7 @@ sidebar_label: Database Script (beta)
 ---
 
 :::caution
-WIP, copied from https://sysl.io/docs/commands/dbscripts/.
+WIP
 
 **TODO:**
 

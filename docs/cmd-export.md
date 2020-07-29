@@ -29,7 +29,7 @@ Currently, the supported formats include:
 - `-f, --format="swagger"` Format of export, supported options: (swagger | openapi3).
 - `-o, --output="%(appname).yaml"` Output file path, supported file extensions: (yaml | json) and default value is `%(appname).yaml`. Note, appname is the one specified by flag `--app-name`.
 
-[More common optional flags](common-flags)
+[More common optional flags](common-flags.md)
 
 ## Arguments
 

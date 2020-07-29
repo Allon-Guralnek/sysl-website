@@ -5,7 +5,7 @@ sidebar_label: Database Script Delta (beta)
 ---
 
 :::caution
-WIP, copied from https://sysl.io/docs/commands/dbscriptdelta/.
+WIP
 
 **TODO:**
 
