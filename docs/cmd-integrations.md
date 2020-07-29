@@ -97,7 +97,7 @@ Project [appfmt="%(appname)"]:
         Payment
 ```
 
-<img alt="Integration diagram" src={useBaseUrl('img/sysl/integration-diagram-puml.png')}/>
+<img alt="Integration diagram" src={useBaseUrl('img/diagramgen/integration-diagram-puml.png')}/>
 
 
 ### Endpoint Analysis Diagram
@@ -134,4 +134,4 @@ Project [appfmt="%(appname)"]:
         Payment
 ```
 
-<img alt="EPA diagram" src={useBaseUrl('img/sysl/epa-diagram-puml.png')}/>
+<img alt="EPA diagram" src={useBaseUrl('img/diagramgen/epa-diagram-puml.png')}/>

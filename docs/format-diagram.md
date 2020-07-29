@@ -93,4 +93,4 @@ appfmt="%(@status?<color red>%(appname)</color>|%(appname))" epfmt="%(@status?
 See <a href={useBaseUrl('img/sysl/attribs.sysl')} >attribs.sysl</a> for complete example. Notice how
 `appfmt` and `epfmt` use `%(@status)`.
 
-<img alt="Sequence Diagram" src={useBaseUrl('img/sysl/attribs-Seq.png')} />
+<img alt="Sequence Diagram" src={useBaseUrl('img/diagramgen/attribs-Seq.png')} />

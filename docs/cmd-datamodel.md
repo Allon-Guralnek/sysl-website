@@ -75,7 +75,7 @@ Payment:
             @sensitive="true"
         type <: string
 ```
-<img alt="Payment Datamodel diagram" src={useBaseUrl('img/sysl/data-diagram-puml.svg')} />
+<img alt="Payment Datamodel diagram" src={useBaseUrl('img/diagramgen/data-diagram-puml.svg')} />
 
 ### Compound Datamodel Diagram
 
@@ -94,7 +94,7 @@ Payment:
         Amount <: int
 ```
 
-<img alt="Payment Datamodel diagram" src={useBaseUrl('img/sysl/data-diagram-compound-puml.svg')} />
+<img alt="Payment Datamodel diagram" src={useBaseUrl('img/diagramgen/data-diagram-compound-puml.svg')} />
 
 
 ### Project Datamodel Diagram
@@ -129,10 +129,10 @@ Project:
 
 This diagram only shows the types within the **Payment** application
 
-<img alt="Payment Datamodel diagram" src={useBaseUrl('img/sysl/data-diagram-payment.svg')} />
+<img alt="Payment Datamodel diagram" src={useBaseUrl('img/diagramgen/data-diagram-payment.svg')} />
 
 
 This diagram only shows the types within the **PaymentService** application
 
-<img alt="Payment Info Datamodel diagram" src={useBaseUrl('img/sysl/data-diagram-paymentinfo.svg')} />
+<img alt="Payment Info Datamodel diagram" src={useBaseUrl('img/diagramgen/data-diagram-paymentinfo.svg')} />
 

@@ -28,6 +28,8 @@ sysl-website
 
 All the documentation files are under `docs` which are Markdown-formatted. [Markdown](https://daringfireball.net/projects/markdown/syntax) is a syntax that enables you to write formatted content in a readable syntax. Also, you can do [more than just parsing Markdown](https://v2.docusaurus.io/docs/markdown-features) by using Docusaurus 2.
 
+Regards to adding image, we are using [useBaseUrl](https://v2.docusaurus.io/docs/docusaurus-core/#usebaseurl) instead of Markdown image syntax.
+
 #### Add New Doc File
 
 1. Create a new Markdown file in `docs` with [header](https://v2.docusaurus.io/docs/markdown-features#markdown-headers)

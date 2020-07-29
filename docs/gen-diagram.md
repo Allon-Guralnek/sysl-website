@@ -17,7 +17,7 @@ Sysl lets you generate various diagrams from your specifications so that you can
 
 Integration diagrams shows you which applications which make up your architecture and how they interact with each other.
 
-<img alt="Integration diagram" src={useBaseUrl('img/sysl/int-diagram-mermaid.svg')}/>
+<img alt="Integration diagram" src={useBaseUrl('img/diagramgen/int-diagram-mermaid.svg')}/>
 
 For more details, refer to [Integration Diagram](cmd-integrations.md)
 
@@ -25,7 +25,7 @@ For more details, refer to [Integration Diagram](cmd-integrations.md)
 
 Sequence diagrams show how a call to an endpoint propagates through your system.
 
-<img alt="Sequence Diagram" src={useBaseUrl('img/sysl/attribs-Seq.png')} max-width="80%"/>
+<img alt="Sequence Diagram" src={useBaseUrl('img/diagramgen/attribs-Seq.png')} max-width="80%"/>
 
 For more details, refer to [Sequence Diagram](cmd-sd.md)
 
@@ -33,6 +33,6 @@ For more details, refer to [Sequence Diagram](cmd-sd.md)
 
 Data Model Diagrams show the relationship between your data types.
 
-<img alt="Data Model diagram" src={useBaseUrl('img/sysl/data-diagram-mermaid.svg')}/>
+<img alt="Data Model diagram" src={useBaseUrl('img/diagramgen/data-diagram-mermaid.svg')}/>
 
 For details on the command, refer to [Datamodel Diagram](cmd-datamodel.md)

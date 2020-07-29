@@ -66,7 +66,7 @@ Payment:
 
 ```
 
-<img alt="Sequence Diagram" src={useBaseUrl('img/sysl/seq-diagram-mermaid.svg')} />
+<img alt="Sequence Diagram" src={useBaseUrl('img/diagramgen/seq-diagram-mermaid.svg')} />
 
 ## Integration Diagram
 
@@ -96,7 +96,7 @@ Payment:
 sysl diagram -i grocerystore.sysl --app GroceryStore
 ```
 
-<img alt="Integration Diagram" src={useBaseUrl('img/sysl/int-diagram-mermaid.svg')} />
+<img alt="Integration Diagram" src={useBaseUrl('img/diagramgen/int-diagram-mermaid.svg')} />
 
 
 ## Data Model Diagram
@@ -121,4 +121,4 @@ PaymentService:
 sysl diagram -d Payment.sysl
 ```
 
-<img alt="Data Model Diagram" src={useBaseUrl('img/sysl/data-diagram-mermaid.svg')} />
+<img alt="Data Model Diagram" src={useBaseUrl('img/diagramgen/data-diagram-mermaid.svg')} />

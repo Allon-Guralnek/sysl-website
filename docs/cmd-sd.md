@@ -18,7 +18,7 @@ This command requires the SYSL_PLANTUML environment variable to be set or passed
 
 `sysl sd` lets you generate a sequence diagram originating from a single endpoint.
 
-<img alt="Sequence diagram" src={useBaseUrl('img/sysl/seq-diagram-puml.png')}/>
+<img alt="Sequence diagram" src={useBaseUrl('img/diagramgen/seq-diagram-puml.png')}/>
 
 ## Usage
 
@@ -94,4 +94,4 @@ Payment:
 
 ```
 
-<img alt="Sequence diagram" src={useBaseUrl('img/sysl/seq-diagram-puml.png')}/>
+<img alt="Sequence diagram" src={useBaseUrl('img/diagramgen/seq-diagram-puml.png')}/>
