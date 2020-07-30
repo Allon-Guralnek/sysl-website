@@ -38,7 +38,13 @@ module.exports = {
           // 'cmd-template',
         ],
       },
-      // 'plugin',
+      {
+        "Sysl Catalog CLI Reference": [
+          "sysl-catalog",
+          "sysl-catalog-install",
+          "sysl-catalog-cmd",
+        ],
+      },
     ],
   },
   community: ["discussions", "resources", "faq"],

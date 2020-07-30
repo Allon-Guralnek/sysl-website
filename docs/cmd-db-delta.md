@@ -1,7 +1,7 @@
 ---
 id: cmd-db-delta
 title: Database Script Delta (beta)
-sidebar_label: Database Script Delta (beta)
+sidebar_label: db-delta
 ---
 
 :::caution

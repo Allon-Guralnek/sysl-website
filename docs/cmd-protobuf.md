@@ -1,7 +1,7 @@
 ---
 id: cmd-protobuf
 title: Protobuf
-sidebar_label: Protobuf
+sidebar_label: protobuf
 ---
 
 ## Summary

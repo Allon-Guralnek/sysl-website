@@ -1,7 +1,7 @@
 ---
 id: cmd-datamodel
 title: Data Model Diagram
-sidebar_label: Data Model Diagram
+sidebar_label: datamodel
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

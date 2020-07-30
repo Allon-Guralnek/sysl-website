@@ -1,7 +1,7 @@
 ---
 id: cmd-diagram
 title: Mermaid Diagram (beta)
-sidebar_label: Mermaid Diagram (beta)
+sidebar_label: diagram
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

@@ -1,7 +1,7 @@
 ---
 id: cmd-integrations
 title: Integration Diagram
-sidebar_label: Integration Diagram
+sidebar_label: integrations
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
