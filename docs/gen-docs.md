@@ -1,6 +1,11 @@
 ---
 id: gen-docs
 title: Documentation Generation
+keywords:
+  - documentation
+  - docs
+  - catalog
+  - generation
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 

@@ -1,7 +1,9 @@
 ---
 id: cmd
-title: Sysl CLI Documentation
-sidebar_label: Overview
+title: Command Documentation
+sidebar_label: Command Documentation
+keywords:
+  - command
 ---
 
 ```

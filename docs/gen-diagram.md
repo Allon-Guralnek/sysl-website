@@ -1,6 +1,11 @@
 ---
 id: gen-diagram
 title: Diagram Generation
+keywords:
+  - diagram
+  - mermaid
+  - plantuml
+  - generation
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

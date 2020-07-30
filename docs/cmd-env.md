@@ -2,6 +2,8 @@
 id: cmd-env
 title: Environment Variables
 sidebar_label: Environment Variables
+keywords:
+  - command
 ---
 
 ## Summary

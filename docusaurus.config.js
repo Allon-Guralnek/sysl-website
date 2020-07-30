@@ -35,7 +35,13 @@ module.exports = {
       ],
     },
     footer: {
-      copyright: `Copyright © ${new Date().getFullYear()} Sysl.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Sysl (Apache-2.0 License)`,
+    },
+    algolia: {
+      apiKey: 'e746801b8fd0862b43f994ad13cff9b5',
+      indexName: 'sysl',
+      appId: 'app-id', // Optional, if you run the DocSearch crawler on your own
+      algoliaOptions: {}, // Optional, if provided by Algolia
     },
     colorMode: {
       defaultMode: "light",

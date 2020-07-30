@@ -83,3 +83,9 @@ A development version is deployed using Netlify. Deployment previews are enabled
 ### Linter
 
 [spellcheck](https://github.com/marketplace/actions/github-spellcheck-action) GitHub Action is used as the English spelling check linter. Add custom terms in `.wordlist.txt` to pass the spelling check. To run the spellcheck locally, run `npm run spellcheck`
+
+[linkcheck](https://github.com/marketplace/actions/markdown-link-check) GitHub Action is used as the Markdown broken link check linter.
+
+### Search
+
+[Algolia DocSearch](https://docsearch.algolia.com/) is used for website searching. The crawler is configured in [docsearch-config](https://github.com/algolia/docsearch-configs/blob/master/configs/sysl.json) and it's now running every 24h.

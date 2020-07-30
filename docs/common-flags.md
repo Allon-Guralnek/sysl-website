@@ -2,6 +2,8 @@
 id: common-flags
 title: Common Flags
 sidebar_label: Common Flags
+keywords:
+  - command
 ---
 
 ## Summary

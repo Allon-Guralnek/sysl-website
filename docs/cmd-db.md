@@ -1,7 +1,9 @@
 ---
 id: cmd-db
 title: Database Script (beta)
-sidebar_label: db
+sidebar_label: Database Script (beta)
+keywords:
+  - command
 ---
 
 :::caution

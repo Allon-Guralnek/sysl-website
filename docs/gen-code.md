@@ -1,6 +1,12 @@
 ---
 id: gen-code
 title: Code Generation
+keywords:
+  - code
+  - go
+  - grpc
+  - rest
+  - generation
 ---
 
 :::caution

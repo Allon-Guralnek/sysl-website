@@ -1,7 +1,9 @@
 ---
 id: cmd-sd
 title: Sequence Diagram
-sidebar_label: sd
+sidebar_label: Sequence Diagram
+keywords:
+  - command
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

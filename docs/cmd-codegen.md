@@ -1,7 +1,9 @@
 ---
 id: cmd-codegen
 title: Code Generation
-sidebar_label: codegen
+sidebar_label: Code Generation
+keywords:
+  - command
 ---
 
 :::caution

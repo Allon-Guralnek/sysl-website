@@ -1,7 +1,9 @@
 ---
 id: cmd-export
 title: Export
-sidebar_label: export
+sidebar_label: Export
+keywords:
+  - command
 ---
 
 ## Summary

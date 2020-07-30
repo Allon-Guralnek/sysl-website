@@ -1,7 +1,9 @@
 ---
 id: cmd-import
 title: Import
-sidebar_label: import
+sidebar_label: Import
+keywords:
+  - command
 ---
 
 ## Summary

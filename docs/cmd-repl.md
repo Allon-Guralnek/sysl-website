@@ -1,7 +1,9 @@
 ---
 id: cmd-repl
 title: REPL
-sidebar_label: repl
+sidebar_label: REPL
+keywords:
+  - command
 ---
 
 ## Summary

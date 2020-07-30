@@ -1,7 +1,9 @@
 ---
 id: cmd-validate
 title: Validate
-sidebar_label: validate
+sidebar_label: Validate
+keywords:
+  - command
 ---
 
 ## Summary

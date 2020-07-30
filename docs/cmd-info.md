@@ -1,7 +1,9 @@
 ---
 id: cmd-info
 title: Binary Information
-sidebar_label: info
+sidebar_label: Binary Information
+keywords:
+  - command
 ---
 
 ## Summary

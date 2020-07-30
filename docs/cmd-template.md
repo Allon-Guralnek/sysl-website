@@ -2,6 +2,8 @@
 id: cmd-template
 title: Template (beta)
 sidebar_label: Template (beta)
+keywords:
+  - command
 ---
 
 :::caution
