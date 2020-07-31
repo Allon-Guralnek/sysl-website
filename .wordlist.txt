@@ -261,3 +261,7 @@ xsd
 YAML
 yaml
 zshrc
+TypeInt
+TypeString
+TypeUUID
+UnionType

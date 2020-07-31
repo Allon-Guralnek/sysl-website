@@ -790,8 +790,25 @@ Views are sysl's functions; we can use them in the transformation language, see 
 
 `!union`
 Unions are a union type;
-`!union string, int32`
-can either be a string, int32, but not both.
+```
+  !alias TypeString:
+    string
+
+  !alias TypeInt32:
+    int32
+
+  !type TypeUUID:
+    id <: string
+
+  !union UnionType:
+    TypeString
+    TypeInt32
+    TypeUUID
+
+  !type User:
+    id <: UnionType
+```
+User id can be one of string, int32 or TypeUUID only.
 
 ## Table
 
