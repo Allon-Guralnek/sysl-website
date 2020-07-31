@@ -1134,7 +1134,7 @@
     "@francoischalifour/autocomplete-preset-algolia" "^1.0.0-alpha.25"
     algoliasearch "^4.0.0"
 
-"@docusaurus/core@^2.0.0-alpha.60":
+"@docusaurus/core@^2.0.0-alpha.58", "@docusaurus/core@^2.0.0-alpha.60":
   version "2.0.0-alpha.60"
   resolved "https://registry.yarnpkg.com/@docusaurus/core/-/core-2.0.0-alpha.60.tgz#37b24d372b7ccccfd62b6296aa72281bb479f53b"
   integrity sha512-AQq70KEV8e6TxR+TfPwMkYT5NhUwsqEwNsoeD75KnfWoJZvM2Bso9Ixqwu4lQ49aS7irO9gJo4vovF3675yqpg==
@@ -1288,7 +1288,7 @@
     "@docusaurus/types" "^2.0.0-alpha.60"
     "@docusaurus/utils" "^2.0.0-alpha.60"
 
-"@docusaurus/plugin-google-analytics@^2.0.0-alpha.60":
+"@docusaurus/plugin-google-analytics@^2.0.0-alpha.58", "@docusaurus/plugin-google-analytics@^2.0.0-alpha.60":
   version "2.0.0-alpha.60"
   resolved "https://registry.yarnpkg.com/@docusaurus/plugin-google-analytics/-/plugin-google-analytics-2.0.0-alpha.60.tgz#fd5bbd4a83b5bf65a81339ba1f66a3d7e15a328b"
   integrity sha512-+g+kvfOdKdTAnFtOdZgWlXKWvOjbmyPu9+A4JfjEm+gTk6RipDzgmEWcVaCD8DhYY/H6gwWfLV51LL2iNW/kUg==
@@ -1308,7 +1308,7 @@
     fs-extra "^8.1.0"
     sitemap "^3.2.2"
 
-"@docusaurus/preset-classic@^2.0.0-alpha.60":
+"@docusaurus/preset-classic@^2.0.0-alpha.58":
   version "2.0.0-alpha.60"
   resolved "https://registry.yarnpkg.com/@docusaurus/preset-classic/-/preset-classic-2.0.0-alpha.60.tgz#907e548399ed3f39dbe2298084f54bab40127cff"
   integrity sha512-OVweILbKS/2iQafTT9qkkZQW1BBX6N4XccMOv1PcFQqwXdmM294Oo0VxYwSus67tOmdljpVCeeRWq/PY4jWR0g==
@@ -3805,10 +3805,10 @@ electron-to-chromium@^1.3.378, electron-to-chromium@^1.3.413:
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.453.tgz#758a8565a64b7889b27132a51d2abb8b135c9d01"
   integrity sha512-IQbCfjJR0NDDn/+vojTlq7fPSREcALtF8M1n01gw7nQghCtfFYrJ2dfhsp8APr8bANoFC8vRTFVXMOGpT0eetw==
 
-elliptic@^6.0.0, elliptic@^6.5.2:
-  version "6.5.2"
-  resolved "https://registry.yarnpkg.com/elliptic/-/elliptic-6.5.2.tgz#05c5678d7173c049d8ca433552224a495d0e3762"
-  integrity sha512-f4x70okzZbIQl/NSRLkI/+tteV/9WqL98zx+SQ69KbXxmVrmjwsNUPn/gYJJ0sHvEak24cZgHIPegRePAtA/xw==
+elliptic@^6.5.3:
+  version "6.5.3"
+  resolved "https://registry.yarnpkg.com/elliptic/-/elliptic-6.5.3.tgz#cb59eb2efdaf73a0bd78ccd7015a62ad6e0f93d6"
+  integrity sha512-IMqzv5wNQf+E6aHeIqATs0tOLeOTwj1QKbRcS3jBbYkl5oLAserA8yJTT7/VyHUYG91PRmPyeQDObKLPpeS4dw==
   dependencies:
     bn.js "^4.4.0"
     brorand "^1.0.1"
