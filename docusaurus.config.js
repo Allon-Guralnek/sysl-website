@@ -15,7 +15,7 @@ module.exports = {
         src: "img/logo-blue.png",
         srcDark: "img/logo-white.png",
       },
-      links: [
+      items: [
         { to: "/", label: "Home", position: "right" },
         { to: "docs", label: "Docs", position: "right" },
         { to: "docs/discussions", label: "Community", position: "right" },
@@ -91,7 +91,7 @@ module.exports = {
       },
     ],
   ],
-  plugins: [require.resolve("@docusaurus/plugin-google-analytics")],
+  plugins: [],
   scripts: [],
   stylesheets: [
     "https://fonts.googleapis.com/css?family=Lato:wght@400;900|Roboto|Source+Code+Pro",
