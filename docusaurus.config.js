@@ -15,7 +15,7 @@ module.exports = {
         src: "img/logo-blue.png",
         srcDark: "img/logo-white.png",
       },
-      links: [
+      items: [
         { to: "/", label: "Home", position: "right" },
         { to: "docs", label: "Docs", position: "right" },
         { to: "docs/discussions", label: "Community", position: "right" },
