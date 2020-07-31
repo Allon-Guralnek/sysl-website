@@ -82,7 +82,7 @@ A development version is deployed using Netlify. Deployment previews are enabled
 
 ### Linter
 
-[spellcheck](https://github.com/marketplace/actions/github-spellcheck-action) GitHub Action is used as the English spelling check linter. Add custom terms in `.wordlist.txt` to pass the spelling check. To run the spellcheck locally, run `npm run spellcheck`
+<!-- [spellcheck](https://github.com/marketplace/actions/github-spellcheck-action) GitHub Action is used as the English spelling check linter. Add custom terms in `.wordlist.txt` to pass the spelling check. To run the spellcheck locally, run `npm run spellcheck` -->
 
 [linkcheck](https://github.com/marketplace/actions/markdown-link-check) GitHub Action is used as the Markdown broken link check linter.
 
