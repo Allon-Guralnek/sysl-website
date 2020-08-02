@@ -92,7 +92,7 @@ Here you have two options:
 # clone it to create a local copy on your computer
 $ git clone https://github.com/anz-bank/sysl.git
 $ cd sysl
-$ make install
+$ GOPATH=$(go env GOPATH) make install
 ```
 
 ## Try it out
