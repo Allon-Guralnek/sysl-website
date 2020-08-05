@@ -92,9 +92,9 @@ export SYSL_PLANTUML=http://www.plantuml.com/plantuml
 - `SYSL_MODULES`
 
 ```
-export SYSL_MODULES=true
+export SYSL_MODULES=on
 ```
 
-Setting `SYSL_MODULES` to `true` means Sysl modules are enabled, `false` means disabled. By default, if this is not declared, Sysl modules are enabled.
+Setting `SYSL_MODULES` to `on` means Sysl modules are enabled, `off` means disabled. By default, if this is not declared, Sysl modules are enabled.
 
 For more details, refer to [Installation doc](installation.md)
