@@ -26,7 +26,7 @@ function Hero() {
                   )}
                   to={useBaseUrl("docs/tutorial")}
                 >
-                  I'm a developer
+                  I’m a Software Engineer
                 </Link>
                 <Link
                   className={classnames(
@@ -35,7 +35,7 @@ function Hero() {
                   )}
                   to={useBaseUrl("docs/tutorial")}
                 >
-                  I'm not a developer
+                  I’m not an Engineer
                 </Link>
               </div>
             </div>
@@ -113,7 +113,7 @@ function Hero() {
                     (styles.avatar__line, styles.avatar__line_developers)
                   }
                 >
-                  Developers
+                  Engineers
                 </span>
               </div>
               <div

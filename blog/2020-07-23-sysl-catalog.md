@@ -14,7 +14,7 @@ A Markdown/HTML + Diagram generator for Sysl specifications.
 
 ## Objective
 
-The objective of sysl-catalog is to create the most seamless experience for developers to document their API behaviour, as well as creating a standardised way multiple teams can create documentation whilst gaining mutual benefit from already existing documentation.
+The objective of sysl-catalog is to create the most seamless experience for engineers to document their API behaviour, as well as creating a standardised way multiple teams can create documentation whilst gaining mutual benefit from already existing documentation.
 
 ## Background
 

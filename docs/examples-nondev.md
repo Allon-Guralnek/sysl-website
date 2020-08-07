@@ -1,7 +1,7 @@
 ---
 id: examples-nondev
-title: Non-Developer Use Cases
-sidebar_label: Non-Developer Use Cases
+title: Other Use Cases
+sidebar_label: Other Use Cases
 ---
 
 Doc Reference:
@@ -12,7 +12,7 @@ Doc Reference:
 
 ## As an Analyst
 
-## As an DevOps or Platform Developer
+## As an DevOps or Platform Engineer
 
 ## As a Tester
 

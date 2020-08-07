@@ -25,4 +25,4 @@ To write Sysl specifications, you'll want [Visual Studio Code](https://code.visu
 
 Once you have `sysl` working, **[start with the Tutorial](tutorial.md)** to get a feel for what Sysl can do.
 
-There are also use cases for [developers](examples-dev.md) and [non-developers](examples-nondev.md), and more in-depth details of the [each of Sysl's features](features.md) and the [language itself](lang-spec.md).
+There are also use cases for [engineers](examples-dev.md) and [non-engineers such as analysts, architects, testers, etc](examples-nondev.md), and more in-depth details of the [each of Sysl's features](features.md) and the [language itself](lang-spec.md).

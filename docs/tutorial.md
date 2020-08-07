@@ -193,5 +193,5 @@ This is just scratching the surface of what Sysl can do, but hopefully you're st
 
 <!-- TODO: To learn more about how Sysl can support you in your role, take a deeper dive in the following guides:
 
-* [Sysl for Developers](examples-dev.md)
-* [Sysl for Non-Developers](examples-nondev.md) -->
+* [Sysl for Engineers](examples-dev.md)
+* [Sysl for Non-Engineers](examples-nondev.md) -->
