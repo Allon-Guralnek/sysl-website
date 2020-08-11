@@ -1,7 +1,7 @@
 ---
 id: cmd-repl
 title: REPL
-sidebar_label: REPL
+sidebar_label: repl
 keywords:
   - command
 ---

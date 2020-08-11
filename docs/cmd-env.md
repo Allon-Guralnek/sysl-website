@@ -1,7 +1,7 @@
 ---
 id: cmd-env
 title: Environment Variables
-sidebar_label: Environment Variables
+sidebar_label: env
 keywords:
   - command
 ---

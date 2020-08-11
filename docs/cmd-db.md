@@ -1,7 +1,7 @@
 ---
 id: cmd-db
 title: Database Script (beta)
-sidebar_label: Database Script (beta)
+sidebar_label: generate-db-scripts
 keywords:
   - command
 ---

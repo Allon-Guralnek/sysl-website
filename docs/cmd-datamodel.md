@@ -1,7 +1,7 @@
 ---
 id: cmd-datamodel
 title: Data Model Diagram
-sidebar_label: Data Model Diagram
+sidebar_label: datamodel
 keywords:
   - command
 ---
@@ -18,7 +18,7 @@ This command requires the `SYSL_PLANTUML` environment variable to be set or pass
 
 ---
 
-`sysl datamodel generates data model diagrams for types defined in Sysl.
+`sysl datamodel` generates data model diagrams for types defined in Sysl.
 
 ## Usage
 

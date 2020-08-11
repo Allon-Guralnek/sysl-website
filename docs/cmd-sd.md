@@ -1,7 +1,7 @@
 ---
 id: cmd-sd
 title: Sequence Diagram
-sidebar_label: Sequence Diagram
+sidebar_label: sd
 keywords:
   - command
 ---

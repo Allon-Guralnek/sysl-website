@@ -1,9 +1,10 @@
 ---
 id: cmd-template
 title: Template (beta)
-sidebar_label: Template (beta)
+sidebar_label: template
 keywords:
   - command
+  - template
 ---
 
 :::caution
