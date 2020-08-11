@@ -17,6 +17,15 @@ module.exports = {
     ],
     "Advanced Guides": [
       "lang-spec",
+      // {
+      //   "Supported Formats": [
+      //     "formats-overview",
+      //     "formats-avro",
+      //     "formats-openapi",
+      //     "formats-spanner",
+      //     "formats-xsd",
+      //   ]
+      // },
       {
         "Command Documentation": [
           "cmd",
