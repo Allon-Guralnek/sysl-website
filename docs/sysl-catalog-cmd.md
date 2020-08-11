@@ -46,7 +46,7 @@ Args:
 
 ## Requirements
 
-To see an example of a sysl file used to generate documentation, refer to [sizzle.sysl](https://github.com/anz-bank/sysl-catalog/blob/master/demo/sizzle.sysl)
+To see an example of a sysl file used to generate documentation, refer to [demo.sysl](https://github.com/anz-bank/sysl-catalog/blob/master/demo/demo.sysl)
 
 1. `@package` attribute must be specified:
 
