@@ -15,9 +15,11 @@
     "@docusaurus/core": "^2.0.0-alpha.60",
     "@docusaurus/plugin-google-analytics": "^2.0.0-alpha.60",
     "@docusaurus/preset-classic": "^2.0.0-alpha.60",
+    "ace-builds": "^1.4.12",
     "classnames": "^2.2.6",
     "elliptic": "^6.5.3",
     "react": "^16.8.4",
+    "react-ace": "^9.1.2",
     "react-dom": "^16.8.4"
   },
   "browserslist": {
