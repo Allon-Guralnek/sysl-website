@@ -5,7 +5,7 @@ import styles from "./styles.module.css";
 import AceEditor from "react-ace";
 import "ace-builds/src-noconflict/theme-monokai";
 
-const playgroundUrl = "http://play.sysl.io/";
+const playgroundUrl = "https://sysl-playground.herokuapp.com/";
 const exampleList = [
   {
     name: "Sequence Diagram",
