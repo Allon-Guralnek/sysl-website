@@ -1,6 +1,6 @@
 .tryout {
   background-color: var(--ifm-color-primary);
-  padding: 2rem;
+  padding: 2rem 15rem;
 }
 .tryout__title {
   margin-bottom: 1rem;
@@ -9,6 +9,7 @@
 
 .tryout__link {
   float: right;
+  border: 2px solid #ffffff;
 }
 .tryout__output {
   background-color: #ffffff;
@@ -109,6 +110,8 @@
   margin-bottom: 1rem;
   height: 40px;
   line-height: 40px;
+  font-size: large;
+  border-radius: 5px;
 }
 
 .tryout__run__button, .tryout__run__button__loading {

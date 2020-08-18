@@ -17,7 +17,7 @@ Sysl lets you generate documentation from your specifications so that they are a
 
 More Resources:
 
-- [Check out a live demo](https://api-catalog.sysl.io/)
+- [Check out a live demo](https://demo.sysl.io/)
 - To install it, [follow the instructions here](sysl-catalog-install.md)
 - [Click here for more details on the sysl-catalog CLI](sysl-catalog-cmd.md)
 

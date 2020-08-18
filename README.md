@@ -55,6 +55,7 @@ The homepage code of this website is in `src/pages/index.js` with configuration 
 ### Local Development
 
 ```
+$ yarn install
 $ yarn start
 ```
 
