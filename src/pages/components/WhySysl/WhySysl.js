@@ -42,15 +42,15 @@ const badges = [
 function WhySysl() {
   return (
     <React.Fragment>
-      <div className={styles.why__sysl__title}>
-        <h1
+      <div id="why" className={styles.why__sysl__title}>
+        <a href="#why"><h1
           className={classnames(
             "text--primary text--center",
             deliveryStyles.deliver__title
           )}
         >
           Why Sysl
-        </h1>
+        </h1></a>
       </div>
       <div className={styles.why__sysl__curve}></div>
       <div className={styles.why__sysl}>

@@ -7,15 +7,15 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
 function Deliver() {
   return (
     <React.Fragment>
-      <div className={styles.deliver__title__section}>
-        <h1
+      <div id="deliver" className={styles.deliver__title__section}>
+        <a href="#deliver"><h1
           className={classnames(
             "text--primary text--center",
             styles.deliver__title
           )}
         >
           What Sysl Delivers
-        </h1>
+        </h1></a>
         <p className={styles.deliver__desc}>
           Generate design diagrams in seconds. Create new services in minutes.<br />
           Take those specifications and get all of Sysl's other benefits for free.

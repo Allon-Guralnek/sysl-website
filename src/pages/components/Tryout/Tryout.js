@@ -127,15 +127,15 @@ function Tryout() {
   };
 
   return (
-    <div className={styles.tryout}>
-      <h1
+    <div id="try" className={styles.tryout}>
+      <a href="#try"><h1
         className={classnames(
           "text--center text--secondary",
           styles.tryout__title
         )}
       >
         Try it out
-      </h1>
+      </h1></a>
       <div className={classnames("col col-12", styles.tryout__control__bar)}>
           <select value={currentExample.name} className={styles.tryout__example__dropdown} onChange={changeExample}>
             {exampleList &&
