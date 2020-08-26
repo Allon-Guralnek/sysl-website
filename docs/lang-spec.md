@@ -372,12 +372,15 @@ form from parsing.
 An endpoint can return a response to the caller. Everything after `return` keyword till the end-of-line is considered response payload.
 
 You can return:
-- A named return response
-  - with a primitive Sysl type
+- An empty response with code (`code` could be `ok`, `error` or any [HTTP status code](https://httpstatuses.com/))
+  - e.g `return ok`
+  - e.g `return error`
+  - e.g `return 200`
+- A named return response with code
+  - with a [primitive Sysl type](#data-types)
     - e.g `return error <: string`
     - e.g `return ok <: string`
     - e.g `return 200 <: string`
-    - Can be one of any [primitive sysl type](#Data-Types)
   - with a Sysl type - formal type to return to the caller
     - e.g `return ok <: Response`
     - e.g `return 200 <: OrderData`
@@ -385,10 +388,6 @@ You can return:
   - with an expression of a Sysl Type
     - e.g `return ok <: sequence of string`
     - e.g `return 200 <: set of SimpleObj`
-- An empty response
-  - e.g `return ok`
-  - e.g `return error`
-  - e.g `return 200`
 
 ```
 MobileApp:
