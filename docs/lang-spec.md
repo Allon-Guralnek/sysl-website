@@ -380,12 +380,16 @@ You can return:
   - e.g `return LoginData`
 - An expression of a Sysl Type
   - e.g `return sequence of string`
+  - e.g `return set of SimpleObj`
 - A named return response
   - e.g `return error <: string`
+  - e.g `return ok <: Response`
   - e.g `return 200 <: OrderData`
   - e.g `return 200 <: AnotherApp.OrderData`
 - An empty response
   - e.g `return ok`
+  - e.g `return error`
+  - e.g `return 200`
 
 ```
 MobileApp:
@@ -397,9 +401,22 @@ MobileApp:
     return sequence of string
   Order:
     return UserPreference
+  Pay:
+    if notfound:
+      return 404 <: ResourceNotFoundError
+    else if failed:
+      return 500 <: ErrorResponse
+    else:
+      return 200
 
   !type UserPreference
     Geography <: string
+
+  !type ResourceNotFoundError:
+    msg <: string
+
+  !type ErrorResponse:
+    msg <: string
 
 Server:
   !type LoginData
