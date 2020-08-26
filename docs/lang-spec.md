@@ -372,20 +372,19 @@ form from parsing.
 An endpoint can return a response to the caller. Everything after `return` keyword till the end-of-line is considered response payload.
 
 You can return:
-
-- A a primitive Sysl type
-  - e.g `return string`
-  - Can be one of any [primitive sysl type](#Data-Types)
-- A Sysl type - formal type to return to the caller
-  - e.g `return LoginData`
-- An expression of a Sysl Type
-  - e.g `return sequence of string`
-  - e.g `return set of SimpleObj`
 - A named return response
-  - e.g `return error <: string`
-  - e.g `return ok <: Response`
-  - e.g `return 200 <: OrderData`
-  - e.g `return 200 <: AnotherApp.OrderData`
+  - with a primitive Sysl type
+    - e.g `return error <: string`
+    - e.g `return ok <: string`
+    - e.g `return 200 <: string`
+    - Can be one of any [primitive sysl type](#Data-Types)
+  - with a Sysl type - formal type to return to the caller
+    - e.g `return ok <: Response`
+    - e.g `return 200 <: OrderData`
+    - e.g `return 200 <: AnotherApp.OrderData`
+  - with an expression of a Sysl Type
+    - e.g `return ok <: sequence of string`
+    - e.g `return 200 <: set of SimpleObj`
 - An empty response
   - e.g `return ok`
   - e.g `return error`
@@ -394,13 +393,13 @@ You can return:
 ```
 MobileApp:
   Name:
-    return string
+    return ok <: string
   Login:
-    return Server.LoginData
+    return ok <: Server.LoginData
   Search:
-    return sequence of string
+    return ok <: sequence of string
   Order:
-    return UserPreference
+    return ok <: UserPreference
   Pay:
     if notfound:
       return 404 <: ResourceNotFoundError
@@ -409,7 +408,7 @@ MobileApp:
     else:
       return 200
 
-  !type UserPreference
+  !type UserPreference:
     Geography <: string
 
   !type ResourceNotFoundError:
@@ -419,7 +418,7 @@ MobileApp:
     msg <: string
 
 Server:
-  !type LoginData
+  !type LoginData:
     userID <: string
 ```
 
