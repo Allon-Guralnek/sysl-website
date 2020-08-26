@@ -373,11 +373,10 @@ An endpoint can return a response to the caller. Everything after `return` keywo
 
 You can return:
 - A named return response
-  - with a primitive Sysl type
+  - with a [primitive Sysl type](#data-types)
     - e.g `return error <: string`
     - e.g `return ok <: string`
     - e.g `return 200 <: string`
-    - Can be one of any [primitive sysl type](#Data-Types)
   - with a Sysl type - formal type to return to the caller
     - e.g `return ok <: Response`
     - e.g `return 200 <: OrderData`
