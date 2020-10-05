@@ -62,7 +62,7 @@ See [Exporting Sysl](cmd-export.md) for more about outputting Sysl protobufs.
 # The fantastic Hello World greeting system.
 
 HelloService:
-    /greeting/{userId}:
+    /greeting/{userId <: int}:
         GET:
             ...
 ```
@@ -123,8 +123,15 @@ Now that our system has some communication happening, we can generate some usefu
 Let's create a **sequence diagram** illustrating the communication. Sequence diagram generation requires an interaction (i.e. an endpoint invocation) to draw, so we'll use `Hello App <- Greet`
 
 ```bash
-sysl sd --endpoint="Hello App <- Greet" hello.sysl
+$ sysl sd --endpoint="Hello App <- Greet" --output="Greeting.png" hello.sysl
 ```
+
+:::info
+Sysl uses PlantUML to generate diagrams. By default it is configured to use a PlantUML server running on the local machine at `http://localhost:8080/plantuml/`. If you don't have one running, Sysl will report the error `Unable to create http request to http://localhost:8080/plantuml/png/~1UDgCZ...`. For the purposes of this tutorial you may use the publicly hosted service by setting the appropriate environment variable with the following command:
+```bash
+$ SYSL_PLANTUML=http://www.plantuml.com/plantuml
+```
+:::
 
 This produces the diagram below:
 
@@ -168,19 +175,19 @@ However when invoking `sysl` to generate diagrams, we can provide `HelloProject`
 Let's take a look:
 
 ```bash
-sysl sd --app HelloProject hello.sysl
+$ sysl sd --app HelloProject hello.sysl
 ```
 
 <img alt="Sequence diagram of the Greeting scenario" src={useBaseUrl('img/tutorial/4_hello_project_sd.png')}/>
 
 ```bash
-sysl ints --project HelloProject hello.sysl
+$ sysl ints --project HelloProject hello.sysl
 ```
 
 <img alt="Integration diagram of the Greeting scenario" src={useBaseUrl('img/tutorial/4_hello_project_ints.png')}/>
 
 ```bash
-sysl ints --epa --project HelloProject hello.sysl
+$ sysl ints --epa --project HelloProject hello.sysl
 ```
 
 <img alt="Endpoint analysis diagram of the Greeting scenario" src={useBaseUrl('img/tutorial/4_hello_project_epa.png')}/>
